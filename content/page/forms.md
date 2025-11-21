@@ -4,7 +4,7 @@ title: "Forms"
 
 Forms
 
-[Account request](pages/account_request.docx)
+[Account request](https://forms.sns.it/rwe2/module_preview.jsp?MODULE_TAG=HPC_01_ACCOUNTS)
 
 [Hosting request computationally intensive](pages/Hosting_request_Intensive.docx)
 
