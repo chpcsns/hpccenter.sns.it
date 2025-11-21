@@ -1,0 +1,269 @@
+<!doctype html>
+<html class="no-js" lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+		<title>A few notes on the use of Singularity - HPC Wiki</title>
+    <meta itemprop="name" content="WIKI">
+    <meta property="og:title" content="WIKI">
+    <meta property="og:url" content="/page/wiki/pages">
+    <meta property="og:site_name" content="High Performance Computing Center">
+    <meta property="og:type" content="article">
+
+    
+
+    <link href="../" rel="alternate" type="application/rss+xml" title="High Performance Computing Center" />
+    <link href="../" rel="feed" type="application/rss+xml" title="High Performance Computing Center" />
+    
+
+    
+<link rel="shortcut icon" href="../../../logo.ico">
+
+<link rel="stylesheet" href="../../../theme.css">
+
+</head>
+
+<body class="BilboBaggins-theme">
+
+    
+<nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+                    
+            <li><a href="../../about/index.html">About</a></li>
+            
+            
+            
+            <li><a href="../../news/index.html">News</a></li>
+            
+            
+            
+            <li><a href="../../people/index.html">People</a></li>
+            
+            
+            
+            <li><a href="../../wiki/index.html">WIKI</a></li>            
+            
+
+            
+            <li><a href="../../research-support/index.html">Research support</a></li>
+            
+
+
+            <li><a href="../../forms/index.html">Forms</a></li>
+            
+            
+            
+            <li><a href="../../privacy/index.html">Privacy policy</a></li>
+            
+            
+            
+            <li><a href="../../contacts/index.html">Contacts</a></li>
+            
+           
+        </ul>
+        
+    </div>
+</nav>
+
+
+    
+<header>
+
+    <div class="container">
+        <div class="logo">
+            <a id="siteBaseUrl" href="../../../index.html" class="logo">
+                
+                <img src="../../../logo.png" alt="" height=177>                
+
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title"><a
+                    href="../../../index.html">High Performance Computing Center</a></h3>
+            
+            <span class="subtitle">Scuola Normale Superiore</span>
+            
+        </div>
+
+
+        <div class="toggler">
+                
+                <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+    </div>
+</header>
+
+
+    <div class="main container">
+        
+     
+    <div class="article-wrapper u-cf single">
+        
+      <a class="bubble" href="https://www.sns.it/it/centro-high-performance-computing"></a>
+
+			<article class="default article">
+    
+
+    	<div class="content">
+    
+			 <div id="content" class="mw-body" role="main">
+					
+					
+				<div id="bodyContent" class="mw-body-content">
+					<div id="mw-content-text" dir="ltr" class="mw-content-ltr" lang="en">
+						<div class="mw-parser-output">
+
+	
+					<h2><span class="mw-headline" id="singularity_notes">
+                        A few notes on the use of Singularity on the Trantor cluster
+                    </span></h2>
+
+					<p>
+                        <a style="color: green;" href="https://sylabs.io/singularity/">
+                            Singularity</a> 
+                        is a container platform designed to run complex applications on HPC
+                        clusters in a simple, portable, reproducible and escalation-safe way. 
+                        You can build a container using Singularity on your workstation, 
+                        and then run it on the compute nodes of the Trantor cluster.
+                    </p>
+
+                    <p>
+                        At the following URL you can find a very good tutorial about Singularity:
+                        <br/>
+                        <a  style="color: green;" 
+                            href="https://singularity-tutorial.github.io/">
+                            https://singularity-tutorial.github.io/
+                        </a>
+                    </p>
+                        
+                    <p>
+                        You are also warmly welcome to read the official user guide:
+                        <br/>
+                        <a  style="color: green;" 
+                            href="https://sylabs.io/guides/3.6/user-guide/index.html">
+                            https://sylabs.io/guides/3.6/user-guide/index.html
+                        </a>
+                    </p>
+
+                    <p>
+                        Currently, you can run Singularity containers on the following nodes:
+                        <ul style="margin-left: 3rem;">
+                            <li>Daneel</li>
+                            <li>Hal</li>
+                            <li>Helicon</li>
+                            <li>Hypnos</li>
+                            <li>Oromasdes03</li>
+                        </ul>
+                    </p>
+                        
+                    <p>
+                        Please note that, due to technical and security reasons, 
+                        <b>you are not allowed to build containers on the cluster</b>.
+                        At this time, the suggested workflow is the following:
+                        <ol>
+                            <li> Build the container on your workstation as a SIF file. </li>
+                            <li> Copy the SIF file in your home directory on Trantor 
+                                (e.g. by using scp or sftp). </li>
+                            <li>Run the container on compute nodes by submitting a PBS job.</li>
+                        </ol>
+                    </p>
+        
+                    <p>
+                        Due to known incompatibilities with NFS, you should not convert SIF 
+                        images to "sandboxes" on the Trantor cluster (e.g. via the 
+                        <code>singularity build</code> or the 
+                        <code>singularity run --writable</code> commands). 
+                        Running SIF images from NFS locations (such as your home directory) 
+                        is the best and safe way.
+                    </p>
+                        
+                    <p>
+                        CUDA-based containers can be run only on daneel01-03 nodes 
+                        (the only nodes equipped with GPUs). To this end, you need 
+                        to provide the "--nv" flag when executing the 
+                        <code>singularity shell</code> or the <code>singularity run</code> 
+                        commands. Also, do not forget to reserve one or more GPUs by 
+                        explicitly requesting "<b><i>ngpus</i></b>" resources when 
+                        submitting the job (for details: 
+                        <a  style="color: green;"
+                            href="Submitting_Inspecting_and_Cancelling_PBS_Jobs.html">
+                            Submitting, inspecting and cancelling PBS Jobs
+                        </a> ).
+                    </p>
+                        
+                    <p>
+                        To create a container for a CUDA-based application, 
+                        it is recommended to start from the CUDA Docker images 
+                        provided by NVIDIA:
+                        <a style="color: green;"
+                            href="https://hub.docker.com/r/nvidia/cuda">
+                            https://hub.docker.com/r/nvidia/cuda
+                        </a>. <br/>
+                        You have to pay close attention to choose an image with an 
+                        associated CUDA version equal to, or lower than, the one 
+                        supported by the drivers currently installed on the Daneels. 
+                        You can find the maximum CUDA version supported by the drivers 
+                        by running the <code>nvidia-smi</code> command on a Daneel node. 
+                        Then, to find the tag name associated to the required CUDA image, 
+                        click on the "Tags" tab on the top of the 
+                        <a  style="color: green;"
+                            href="https://hub.docker.com/r/nvidia/cuda">
+                            https://hub.docker.com/r/nvidia/cuda
+                        </a>
+                        web page and filter the list by entering the desired CUDA version 
+                        in the search box. You can finally download the image by using the 
+                        following command:
+                        <br/><br/>
+        
+                        <i>singularity pull docker://nvidia/cuda:<b>tag_name</b></i>
+                        <br/><br/>
+        
+                        As an example, to download the image with the "devel" flavour 
+                        of CUDA 10.2 based on Ubuntu 18.4 you have to execute the 
+                        following command:
+                        <br/><br/>
+        
+                        <i>singularity pull docker://nvidia/cuda:10.2-devel-ubuntu18.04</i>
+                    </p>
+        
+        
+                    <p>
+                        Please note that support for CUDA-based containers should be considered 
+                        experimental. If you find any problem, please report them to hpcstaff@sns.it
+                    </p>
+
+
+				</div>
+
+			</div>					
+ 		</div>
+
+	</div>
+	</div>
+	
+	<hr>
+
+<div class="credits">
+    <div class="container">
+
+        <div class="author">
+            <a href=""  target="_blank">
+                2020 HPC Center SNS - Inspired at github.com/Lednerb Bilberry Hugo Theme
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="../../../theme.js"></script>
+
+    
+
+</body>
+
+</html>

@@ -1,0 +1,610 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+		<title>Institutional resources available on Trantor - HPC Wiki</title>
+    <meta itemprop="name" content="WIKI">
+    <meta property="og:title" content="WIKI">
+    <meta property="og:url" content="/page/wiki/pages">
+    <meta property="og:site_name" content="High Performance Computing Center">
+    <meta property="og:type" content="article">
+
+    
+
+    <link href="../" rel="alternate" type="application/rss+xml" title="High Performance Computing Center" />
+    <link href="../" rel="feed" type="application/rss+xml" title="High Performance Computing Center" />
+    
+
+    
+    <link rel="shortcut icon" href="../../../logo.ico">
+
+    <link rel="stylesheet" href="../../../theme.css">
+
+	<style>
+		.output {
+			display: block;
+			font-family: monospace, monospace;
+			white-space: pre-line;
+		}
+	</style>
+
+</head>
+
+<body class="BilboBaggins-theme">
+
+    
+<nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+                    
+            <li><a href="../../about/index.html">About</a></li>
+            
+            
+            
+            <li><a href="../../news/index.html">News</a></li>
+            
+            
+            
+            <li><a href="../../people/index.html">People</a></li>
+            
+            
+            
+            <li><a href="../../wiki/index.html">WIKI</a></li>            
+            
+
+            
+            <li><a href="../../research-support/index.html">Research support</a></li>
+            
+
+
+            <li><a href="../../forms/index.html">Forms</a></li>
+            
+            
+            
+            <li><a href="../../privacy/index.html">Privacy policy</a></li>
+            
+            
+            
+            <li><a href="../../contacts/index.html">Contacts</a></li>
+           
+        </ul>
+        
+    </div>
+</nav>
+
+
+    
+<header>
+
+    <div class="container">
+        <div class="logo">
+            <a id="siteBaseUrl" href="../../../index.html" class="logo">
+                
+                <img src="../../../logo.png" alt="" height=177>                
+
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title"><a href="../../../index.html">High Performance Computing Center</a></h3>
+            
+            <span class="subtitle">Scuola Normale Superiore</span>
+            
+        </div>
+
+
+        <div class="toggler">
+                
+                <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+    </div>
+</header>
+
+
+    <div class="main container">
+        
+     
+    <div class="article-wrapper u-cf single">
+        
+      <a class="bubble" href="https://www.sns.it/it/centro-high-performance-computing"></a>
+
+			<article class="default article">
+    
+
+    	<div class="content">
+    
+			 <div id="content" class="mw-body" role="main">
+					
+					
+				<div id="bodyContent" class="mw-body-content">
+					<div id="mw-content-text" dir="ltr" class="mw-content-ltr" lang="en">
+						<div class="mw-parser-output">
+
+	
+					<h2><span class="mw-headline" id="Resources_available">
+						Institutional resources available on Trantor
+					</span></h2>
+					
+
+					<h4>Hardware</h4>
+					<p>
+						The cluster includes several different node types, organized in homogeneous groups:
+						<ul style="margin-left: 3rem;">
+							<li>
+								<b>Daneel</b> : 3 nodes, each equipped with 2 Intel Xeon CPUs,
+								36 cores (18 cores per socket), 1.5 TB of RAM (about 42 GB/core), 
+								6TB local scratch space and 4 Tesla NVIDIA GPUs with 
+								32 GB of RAM (each).
+							</li>
+							<li>
+								<b>Hal</b> : 2 nodes, each equipped with 4 Intel Xeon CPUs,
+								112 cores (28 cores per socket), 3 TB of RAM (about 28 GB/core) and
+								11TB local scratch space.
+							</li>
+							<li>
+								<b>Helicon</b> : 14 nodes, each equipped with 2 Intel Xeon CPUs, 
+								12 cores (6 cores per socket), 20 GB of RAM (about 1.7 GB/core). 
+								No local scratch space, only a scratch area shared among 
+								the nodes.
+							</li>
+							<li>
+								<b>Artes</b> : 6 nodes, each equipped with 2 Intel Xeon CPUs, 
+								32 cores (16 cores per socket) and 128 GB of RAM (4 GB/core). 
+								The scratch space is shared among the nodes. 
+								The use of these nodes is restricted. 
+								To access, send a request to Professor Chiara Cappelli.
+							</li>
+						</ul>
+					</p>
+					<p>
+						<b>Storage -</b> Clustered NAS with Infiniband backend network, 
+						40 GE frontend network and 3.0 PB of raw space.
+					</p>
+					<p>
+						In addition, Trantor acts as front end node for group owned resources, 
+						open to computation only to specific groups. See the page
+						"<a style="color:green" href="Group_owned_resources_on_Trantor.html">
+							Group owned resources accessible from Trantor
+						</a>" for details.
+					</p>
+
+					<h4>Running computations on the cluster</h4>
+					<p>
+						All calculations <u><b>MUST</b></u> be submitted as Jobs to the 
+						<b>Portable Batch System (PBS) scheduling system</b>, 
+						for their execution on the compute nodes.
+					</p>
+					<p>
+						<b>
+							Running interactively on the "head-nodes" is FORBIDDEN.
+							It is also STRICTLY FORBIDDEN to run your computations
+							on the compute nodes bypassing the job submission mechanism.
+						</b>
+					</p>
+					<p>
+						You can find a brief introduction to PBS at the following Web page:
+						<a 	style="color:green" 
+							href="Submitting_Inspecting_and_Cancelling_PBS_Jobs.html">
+							Submitting, inspecting and cancelling PBS Jobs
+						</a>
+					</p>
+
+					<h4 id="scratch_areas">Scratch Areas</h4>
+					<p>
+						Every user has a scratch space on every computing node, 
+						under <code>/scratch/$USER</code>. This area is a temporary 
+						storage designed for Jobs’ I/O operations.
+						When possible, this storage area is allocated on the local 
+						hard drives of the compute nodes, thus providing a higher 
+						bandwidth and a lower latency than NFS mount points.
+						This is the case, for example, of Daneel and Hal nodes. 
+						Helicon and Artes, instead, are only equipped with a "shared" 
+						scratch area: this is a NFS storage space which is accessible 
+						by all the Helicon and Artes nodes.
+					</p>
+					<p>
+						You can find further details and important notes on the  
+						use of scratch areas at the following Web page:
+						<a 	style="color:green" 
+							href="Submitting_Inspecting_and_Cancelling_PBS_Jobs.html#Scratch_Areas">
+							Submitting, inspecting and cancelling PBS Jobs - Scratch Areas
+						</a>
+					</p>
+
+					<h4 id="project_areas">Project areas</h4>
+					<p>
+						Is it possible to request additional storage areas on the NAS
+						for storing data related to specific research projects and sharing
+						files among projects members. Such additional storage will be reserved
+						for a limited amount of time (max 1 year).
+					</p>
+					<p>
+						In the '<a href="../../forms/index.html">Forms</a>' page you
+						can find a form to request, to the Committee and the Staff,
+						the creation of a project area. The request must be submitted
+						by tenured personnel and must include the list of users that
+						can access the area.
+					</p>
+
+					<h4 id="data_protection">Data protection</h4>
+					<p>
+						Our storage system employs a redundant, distributed file
+						system to avoid data loss in the case of a limited hardware
+						failure (disks in a node or entire nodes). 
+						Furthermore, <em><strong>snapshots</strong></em> of the 
+						content of homes and projects directories are periodically 
+						recorded on the storage system and retained for several
+						months, thus allowing to retrieve  files that were 
+						deleted or overwritten by accident.
+					</p>
+					<p>
+						Keep in mind, however, that snapshots are not an actual 
+						backup mechanism. In fact, while a backup is a full copy 
+						of the data stored on a separate storage device 
+						(preferably located on a different location), 
+						a snapshot is a sort of immutable “photo” of the file system, 
+						generated instantaneously and incrementally on the same 
+						storage device. With respect to snapshots, 
+						backups allow the recovery of the data even in the case 
+						of catastrophic events. On the other hand, backups 
+						require a separate large-capacity storage device, 
+						a significant amount of time and must be performed on 
+						data at rest.
+					</p>
+					<p>
+						Finally, our storage system 
+						<em><strong>
+							does not preserve hard-links in snapshots.
+						</strong></em>
+						That means that if multiple files points to the same
+						blocks of  data on disk,
+						<em><strong>
+							only one of those files will be preserved in snapshots
+						</strong></em>
+						(you can find a gentle introduction to hard-links 
+						<a href="https://www.redhat.com/sysadmin/linking-linux-explained"> here </a>).
+						That fact implies that, in those scenarios where 
+						hard-links are in use, there may be loss of information 
+						when recovering files from snapshots (because only one 
+						hard-link for each data file would be recovered). 
+						Examples of such scenarios include:
+						<ul style="margin-left: 3rem;">
+							<li>
+								Software installations that make use of hard-links 
+								such as (<em><strong>conda virtual environments</strong></em>).
+							</li>
+							<li>
+								Hard-links manually created by users.
+							</li>
+							<li>
+								Files generated as output by applications, 
+								if the software creates hard-links 
+								(e.g. as a way to avoid data duplication). 
+								Fortunately, such cases are quite rare.
+							</li>
+						</ul>
+						This limitation cannot be circumvented, 
+						<em><strong>
+							so please avoid the use of hard-links as  
+							much as possible and use soft-links instead.
+						</strong></em>
+					</p>
+
+					<h4>Software </h4>
+					<p>
+						Most of the software installed on the cluster is made available by means of 
+						<a style="color:green" href="http://modules.sourceforge.net">
+							Environment Modules
+						</a>. 
+						Use the <code>module avail</code> command to get the list of 
+						the currently available modules:
+					</p>
+					<p class="output">
+						[hpcstaff@trantor01 ~]$ module avail
+						------------ /cluster/shared/modules/modulefiles/compilers ---------
+						cmake/3.10.1    gcc/7.3.0    gcc/8.3.0   
+						cmake/3.18.2    gcc/9.3.0    gcc/10.2.0  
+
+						------------- /cluster/shared/modules/modulefiles/libs -------------
+						blas-lapack/gcc-10.2.0/3.9.0      libint/gcc-8.3.0/2.6.0
+						boost/gcc-8.3.0/1.74.0            libint/gcc-8.3.0/2.7.0-beta.1
+						boost/header-only/1.74.0          libint/gcc-8.3.0/2.7.0-beta.6
+						cuda/10.2                      	  libxc/gcc-8.3.0/5.0.0
+						cuda/11.0.2                       openmpi/gcc-8.3.0/4.0.4
+						eigen/3.3.7                       openmpi/gcc-9.3.0/4.0.4
+						fftw/gcc-8.3.0/3.3.8              openmpi/gcc-10.2.0/4.0.4
+						fftw/gcc-9.3.0/3.3.8              scalapack/openmpi-4.0.4/gcc-10.2.0/2.1.0
+						fftw/gcc-10.2.0/3.3.8          
+
+						------------ /cluster/shared/modules/modulefiles/apps --------------
+						gnuplot/5.2.8  gromacs/gcc-8.3.0/2020.3  openbabel/2.4.1
+					</p>
+					<p>
+						You can then use the <code>module load 'modulename'</code> to "load" 
+						a specific module. By doing so, your shell environment will be set up 
+						to use that particular software. This usually consists in properly 
+						setting a few environment variables 
+						(such as PATH, CPATH, LD_LIBRARY_PATH etc.) and loading the related 
+						dependencies. For example, doing 
+						<code>module load gromacs/gcc-8.3.0/2020.3</code> will load the software 
+						needed to run this version of Gromacs, such as OpenMPI and CUDA. 
+						It will also add the binaries path of Gromacs 2020.3 to your environment 
+						and set the relative libraries and man paths, plus other variables specific 
+						to this software. 
+					</p>
+					<p>
+						It is important to note that the <code>module load</code> command can 
+						also be used in job scripts, so to properly set up the environment prior 
+						to a computation (more info on jobs submission with PBS 
+						<a 	style="color:green" 
+							href="Submitting_Inspecting_and_Cancelling_PBS_Jobs.html">here</a>).
+					</p>
+					<p>
+						Other commonly used module commands are the following:
+						<ul style="margin-left: 3rem;">
+							<li><code>module list</code> : prints the currently loaded modules.</li>
+							<li><code>module unload modulename</code> : reverts the modifications that were applied to your shell environment during the loading of the specified module.</li>
+							<li><code>module purge</code> : unloads all the modules.</li>
+							<li><code>module help modulename</code> : prints a concise description of the module.</li>
+						</ul>
+						Please note that there is no module for Python 3 and related libraries, 
+						since the <b>Conda</b> utility provides a better alternative. 
+						A brief introduction to using Conda on the Trantor cluster can be found 
+						<a 	style="color:green" 
+							href="A_brief_introduction_to_using_Conda_on_the_cluster.pdf">here</a>.
+					</p>
+
+					<!--
+					<h5>Wolfram Mathematica</h5>
+					<p>
+						Wolfram Mathematica is available on Trantor.
+					</p>
+					<p>
+						In accordance to the terms of the license subscribed by Scuola Normale Superiore,
+						the use of this software is <b><u>restricted to SNS students and research staff only</u></b>. 
+						Access to the software must be <b>explicitly requested</b> by writing to hpcstaff@sns.it.
+					</p>
+					<p>
+						Once your account is configured, you will be able to use the software by loading 
+						the "<b><i>mathematica/&ltversion number&gt</i></b>" module and executing one of
+						the following commands:
+					</p>
+					<ul style="margin-left: 3rem;">
+						<li>
+							<code>MathKernel </code> : starts the Mathematica Kernel.
+						</li>
+						<li>
+							<code>Mathematica</code> : starts the GUI version of Mathematica. 
+							To be used only on nodes equipped with a desktop environment 
+							(e.g. trantor03.hpc.sns.it).
+						</li>
+					</ul>
+					<p>
+						<b>
+						Please remember that running software on head-nodes is allowed
+						only for light computations. Computationally intensive tasks
+						MUST be executed on compute nodes, by submitting them as a job
+						to the PBS scheduling system 
+						</b>
+						(see 
+						<a 	style="color:green" 
+							href="Submitting_Inspecting_and_Cancelling_PBS_Jobs.html">
+							Submitting, inspecting and cancelling PBS Jobs
+						</a>
+						for details).
+						Jobs with heavy footprints being executed on the head nodes
+						<b><u>may be cancelled without warning</u></b>.
+						
+					</p>
+					<p>
+						Wolfram Mathematica can be used for <b>academic purposes only</b> 
+						and its use is subject to the <b>Wolfram Mathematica License Agreement</b>:<br>
+						<a 	style="color:green" 
+							href="https://www.wolfram.com/legal/agreements/wolfram-mathematica/">
+							https://www.wolfram.com/legal/agreements/wolfram-mathematica/
+						</a><br>
+						<b>Carefully read the terms and conditions before using the software</b>.
+					</p>
+					<p>
+						Furthermore, <b>when publishing academic or research papers for which
+						Mathematica was used, Wolfram Mathematica should be appropriately cited
+						as a reference and/or described in a methods section.</b>
+					</p>
+					<p>
+						Finally note that, at this time, Mathematica on Trantor should be considered
+						<b>experimental</b>. You are advised to save the results of your work frequently!
+						Please report any problem you encounter.
+					</p>
+					
+					<h5>MathWorks MATLAB</h5>
+					<p>
+						MATLAB Parallel Server is available on the Trantor cluster, 
+						allowing to execute long-running CPU and/or GPU intensive 
+						computations on high-performance compute nodes.<br/>
+						Jobs submission and results retrieval is performed directly
+						from the MATLAB instance running on your personal workstation.
+					</p>
+					<p>
+						In accordance with the terms of the license subscribed 
+						by Scuola Normale Superiore, the use of this service is 
+						<b><u>restricted to SNS students and research staff onl</u>y</b>.
+						In addition, access to the service must be <b>explicitly requested</b>
+						by writing to hpcstaff@sns.it.
+					</p>
+					<p>
+						MathWorks products can be used for <b>academic purposes only</b> 
+						and their use is subject to the <b>MathWorks, Inc. Software
+						License Agreement and Program Offering Guide</b>. You can read
+						both documents by selecting the <i>Help → Terms of Use</i> menu
+						entry from the MATLAB toolbar, or by opening the file 
+						<i>license_agreement.txt</i> stored in your MATLAB installation folder.
+						<b>Carefully read the terms and conditions before using the software</b>.
+					</p>
+					<p>
+						Refer to the
+						<a href="Running_MATLAB_computations_on_Trantor.pdf">
+							<b>user guide</b>
+						</a>
+						for details on the required configuration and instructions on how
+						to submit jobs and retrieve results.
+					</p>
+					-->
+
+					<h5>Orca</h5>
+					<p>
+						From the <a href="https://www.kofo.mpg.de/en/research/services/orca">ORCA's website</a>:
+						<blockquote style="font-size: 0.95em;">
+							"ORCA is a flexible, efficient and easy-to-use general purpose tool 
+							for quantum chemistry with specific emphasis on spectroscopic properties 
+							of open-shell molecules. It features a wide variety of standard quantum 
+							chemical methods ranging from semiempirical methods to DFT to 
+							single- and multireference correlated ab initio methods. 
+							It can also treat environmental and relativistic effects."
+						</blockquote>
+					</p>
+					<p>
+						<strong>ORCA may be used exclusively for ACADEMIC PURPOSES</strong> (academic research and teaching).<br>
+						It is FORBIDDEN to use this software in the context of cooperation agreements,
+						project work or other collaboration with for-profit organizations,
+						or with governmental and/or non-profit organizations that do not qualify as academia.
+						This includes contract calculations for third parties as well as to share data
+						generated with the software with third parties for other purposes than academic ones.
+					</p>
+					<p>
+						Publication of data in a scientific journal is expressly permitted.
+						If results obtained with ORCA are published in the scientific literature,
+						you must reference the software as:
+					</p>
+					<p>
+						<cite>
+							F. Neese: Software update: the ORCA program system, version 4.0
+							(WIREs Comput Mol Sci 2018, 8:e1327. doi: 10.1002/wcms.1327)
+						</cite>
+					</p>
+					<p>
+						Using specific methods included in ORCA requires citing additional
+						articles, as described in the
+						<a href="https://www.kofo.mpg.de/412442/orca_manual-opt.pdf">manual</a>.
+					</p>
+					<p>
+						<strong>
+							In order to use the software, you need to register to the 
+							<a href="https://orcaforum.kofo.mpg.de/">ORCA's forum</a>
+							and accept the EULA when prompted. Finally, you will receive
+							a confirmation email that you need to forward to hpcstaff@sns.it.
+						</strong>
+					</p>
+
+					<h5>Compile your software</h5>
+					<p>
+						To compile your software, the first step is to load the module of the 
+						desired compiler. Then load the software libraries you need 
+						(e.g. OpenMPI, CUDA, LAPACK etc.). For each library, make sure to load 
+						a version which has been compiled with the same compiler you plan to use, 
+						otherwise you may encounter compatibility issues! To this end, most of 
+						the libraries modules contain in their name the compiler they are 
+						compatible with. E.g. "fftw/gcc-8.3.0/3.3.8" is the name of the module 
+						for using the FFTW library version 3.3.8 compiled with GCC 8.3.0.
+					</p>
+					<p>
+						Example:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+						<span class="output">
+						$ module load gcc/8.3.0
+						$ module load fftw/gcc-8.3.0/3.3.8
+						$ module load openmpi/gcc-8.3.0/4.0.4
+						</span>
+					</p>
+						
+					<p>                                                                                                                                                                                                                                                                                                                                                      
+						If you need a library which is not currently available, 
+						or if you need to compile an already existing library with 
+						a different compiler, please send a request to the staff (see below).
+					</p>
+
+					<h4>Intel OneAPI compilers</h4>
+					<p>
+						The Intel OneAPI compilers suite is available on Trantor.
+						You can use it by loading the module <code>intel/2021.1.1</code> 
+						and any relevant module under <code>intel/*</code>.
+					</p>
+					<p>
+						<b>
+							The licence is "single fixed Multi-Node", meaning that only
+							one person at a time can use the compiler, from any computer.
+						</b>
+					</p>
+					<p>
+						Since the suite has many tools and libraries, 
+						we decided to install only some of them, to avoid cluttering.
+						Please contact us if you need something that is not installed.
+					</p>
+
+					<h4>JupyterHub@Trantor</h4>
+					<p>
+						A (customized) installation of 
+						<a style="color: green;" href="https://jupyter.org/hub">
+							JupyterHub
+						</a>
+						is available at the following URL: 
+						<a style="color: green;" href="https://jupyter.sns.it">
+							https://jupyter.sns.it
+						</a> 
+					</p>
+					<p>
+						It provides a user-friendly GUI to create one or more Jupyter 
+						notebook servers and scheduling their execution as PBS Jobs. 
+						If you are interested in using JupyterHub@Trantor, 
+						please <b>carefully read the</b> 
+						<a style="color: green;" href="JupyterhubTrantor-UserGuide.pdf">
+						User Guide
+						</a>.
+					</p>
+                                                                                                                                                                                                                                                                                                                                     
+					<h4>User support</h4>
+					<p>
+						To activate an account to access the Trantor cluster, send an email to 
+						<a style="color:green" href="mailto:hpcstaff@sns.it">HPC Staff</a>. 
+						We will provide you a one-time password that you will have to change 
+						at first login. Also, please take care to provide an email address 
+						(one you actually use) that will be added to the cluster mailing list, 
+						so to stay informed about news and maintenance notices.<br/>
+						If you notice any problem, please contact the staff by writing to 
+						<a style="color:green" href="mailto:hpcstaff@sns.it">HPC Staff</a>. 
+						Please contact the staff and NOT a single member. 
+						If your problem can be redirected to someone in particular, 
+						we'll let you know.
+					</p>
+
+				</div>
+
+			</div>					
+ 		</div>
+
+	</div>
+	</div>
+	
+	<hr>	
+
+<div class="credits">
+    <div class="container">
+
+        <div class="author">
+            <a href=""  target="_blank">
+                2020 HPC Center SNS - Inspired at github.com/Lednerb Bilberry Hugo Theme
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="../../../theme.js"></script>
+
+    
+
+</body>
+
+</html>

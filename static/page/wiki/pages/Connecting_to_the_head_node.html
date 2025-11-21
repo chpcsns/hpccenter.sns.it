@@ -1,0 +1,408 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+	<title>Connecting to the head node - HPC Wiki</title>
+    <meta itemprop="name" content="WIKI">
+    <meta property="og:title" content="WIKI">
+    <meta property="og:url" content="/page/wiki/pages/">
+    <meta property="og:site_name" content="High Performance Computing Center">
+    <meta property="og:type" content="article">
+
+    
+
+
+    
+    <link href="../" rel="alternate" type="application/rss+xml" title="High Performance Computing Center" />
+    <link href="../" rel="feed" type="application/rss+xml" title="High Performance Computing Center" />
+    
+
+    
+<link rel="shortcut icon" href="../../../logo.ico">
+
+<link rel="stylesheet" href="../../../theme.css">
+
+<style>
+	.comment {
+		color: green;
+		font-weight: bold;
+		margin-left: 20px;
+	}
+</style>
+
+</head>
+
+<body class="BilboBaggins-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+                    
+            <li><a href="../../about/index.html">About</a></li>
+            
+            
+            
+            <li><a href="../../news/index.html">News</a></li>
+            
+            
+            
+            <li><a href="../../people/index.html">People</a></li>
+            
+            
+            
+            <li><a href="../../wiki/index.html">WIKI</a></li>
+            
+
+            
+            <li><a href="../../research-support/index.html">Research support</a></li>
+            
+            
+            
+            <li><a href="../../forms/index.html">Forms</a></li>
+
+            
+            
+            <li><a href="../../privacy/index.html">Privacy policy</a></li>
+            
+            
+            
+            <li><a href="../../contacts/index.html">Contacts</a></li>
+            
+        </ul>
+        
+    </div>
+</nav>
+
+
+    
+<header>
+
+    <div class="container">
+        <div class="logo">
+            <a id="siteBaseUrl" href="../../../index.html" class="logo">
+                
+                <img src="../../../logo.png" alt="" height=177>                
+
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title"><a
+                    href="../../../index.html">High Performance Computing Center</a></h3>
+            
+            <span class="subtitle">Scuola Normale Superiore</span>
+            
+        </div>
+        
+
+        
+            <div class="toggler">
+                
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+</header>
+
+
+    <div class="main container">
+        
+     
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://www.sns.it/it/centro-high-performance-computing">
+			</a>
+
+<article class="default article">
+    
+
+  <div class="content">
+    
+	<div id="content" class="mw-body" role="main">
+
+
+		<h1 id="firstHeading" class="firstHeading" lang="en">Connecting to the head-nodes</h1>			
+		<div id="bodyContent" class="mw-body-content">
+      	<div id="mw-content-text" dir="ltr" class="mw-content-ltr" lang="en">
+				<div class="mw-parser-output">
+					<div>
+						<p>
+							To get access to (most) of the cluster resources, 
+							you must first login into one of the available
+							"<em>head nodes</em>":
+						</p>
+						<style>
+							dl dt { margin-left: 3rem; font-weight: bold; }
+							dl ul { font-style: italic; margin-left: 2rem; margin-bottom: 1.5rem;}
+							dl li { margin-bottom: 0; }
+						</style>
+						<dl>
+							<dt>trantor01.sns.it</dt>
+							<dd>
+								<ul>
+									<li>Open access</li>
+								</ul>
+							</dd>
+
+
+							<dt>trantor02.sns.it</dt>
+							<dd>
+								<ul>
+									<li>Open access</li>
+								</ul>
+							</dd>
+
+							<dt>trantor03.sns.it</dt>
+							<dd>
+								<ul>
+									<li>Open access</li>
+									<li>Equipped with a desktop environment</li>
+								</ul>
+							</dd>
+
+							<dt>hypnos.sns.it</dt>
+							<dd>
+								<ul>
+									<li>Access restricted to the '<em>interstellar</em>' group</li>
+									<li>Equipped with a desktop environment</li>
+								</ul>
+							</dd>
+							
+							<dt>cinna.sns.it</dt>
+							<dd>
+								<ul>
+									<li>Access restricted to the '<em>compnanobio</em>' group</li>
+									<li>Equipped with a desktop environment</li>
+								</ul>
+							</dd>
+
+							<dt>gaia01.sns.it</dt>
+							<dd>
+								<ul>
+									<li>Access restricted to the '<em>bioinfo</em>' group</li>
+									<li>Acts both as head-node and compute node</li>
+								</ul>
+							</dd>
+						</dl>
+
+						<p>
+							Login and commands execution on the head-nodes are usually managed 
+							by the <b>SSH</b> protocol. However, some of the head-nodes
+							(such as <em>trantor03.sns.it</em>) are also equipped with a desktop
+							environment (Xfce) and the <b>X2Go</b> remote desktop solution.
+						</p>
+						<p>
+							Instructions on how to access the cluster using SSH and X2Go are discussed in the following.
+						</p>
+					</div>
+					<div>
+						<h2>First login to the cluster</h2>
+						<p>
+							At your first login, you will be prompted to change the password:
+							<ul style="list-style: none;">
+								<li><code>ssh <i>username</i>@trantor01.sns.it</code></li>
+								<li><code>Password:</code><span class="comment"># Enter the one-time password</span></li>
+								<li><code>Password expired. Change your password now.</code></li>
+								<li><code>Current Password:</code><span class="comment">#  Enter the one-time password once again</span></li>
+								<li><code>New password:</code><span class="comment">#  Enter a new password</span></li>
+								<li><code>Retype new password:</code><span class="comment"># Confirm the new password</span></li>
+							</ul>
+						</p>
+						<p>
+							The password must be at least 12 characters long and must contain an uppercase letter,
+							a lowercase letter, a digit and a special character. Furthermore, it is not allowed to
+							use the same character three or more times in a row.
+							Finally, when the password expires, old passwords can not be reused.
+						</p>
+					</div>
+					<div>
+						<h2 id="Getting_started_SSH">Getting started with SSH</h2>
+						<p>
+							<b>Secure Shell</b>, or <b>SSH</b>, 
+							is a cryptographic (encrypted) network protocol to allow remote login 
+							and other network services to operate securely over an unsecured 
+							network.
+							The most visible application of the protocol is for access to shell 
+							accounts on Unix-like operating systems.<br>
+							SSH can be used for both command line and GUI applications.<br>
+						</p>
+						<div>
+							<p>Instructions on how to access the cluster using ssh on the most popular operating systems are described in the following:
+							</p>
+							<ul style="margin-left: 3rem;">
+								<li ><a href="#Using_Windows"><span>1</span> <span>Using Windows</span></a></li>
+								<li ><a href="#Using_Linux"><span>2</span> <span>Using Linux</span></a></li>
+								<li ><a href="#Using_MacOS_X"><span>3</span> <span>Using MacOS X</span></a></li>
+							</ul>
+						</div>
+						<br/>
+						<h3 style="font-size: 1.3em"><span id="Using_Windows">Using Windows</span></h3>
+						<p>
+						<b>Windows 10</b> has an official SSH client now. It can be enabled in the Settings panel clicking on Settings -&gt; Optional features -&gt;
+						Add a feature -&gt; OpenSSH Client (if already enabled it will appear in the "Optional features" list).
+						It can be used on any terminal application like the standard <code>cmd</code> console prompt or Windows PowerShell. You can also try <b>Windows Terminal</b> 
+						from Microsoft App store.
+						</p>
+						<p>
+						On older versions of Windows, things are a little more involved. Older Windows does not come with a built-in SSH client, so you have to install
+						one first. We recommend the popular software <i>Putty</i>, which is free and well made.<br>
+						</p>
+						<ul style="margin-left: 3rem;">
+							<li>Download putty <a rel="nofollow" class="external text" href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">here</a>;<br></li>
+							<li>Run <code>putty.exe;</code><br></li>
+							<li>Login to server <tt>trantor01.sns.it</tt> as shown below:<br><br></li>
+						</ul>
+						<p><a href="img/Putty1.jpg" class="image" title="caption"><img alt="caption" src="img/Putty1.jpg" ></a>
+						<br><br>	Type in user-name and password:<br><br>
+						</p>
+						<p><a href="img/Putty2.jpg" class="image" title="caption"><img alt="caption" src="img/Putty2.jpg" ></a>
+						<br><br>
+						You now have your Unix/Linux prompt. On our cluster, the command <code>qstat -Q</code> will show you a quick summary of the queues status, as you can 
+						see below.<br><br>
+						</p>
+						<p><a href="img/Putty3.jpg" class="image" title="caption"><img alt="caption" src="img/Putty3.jpg" ></a>
+						</p>
+						Also, if you need to securely transfer a file between a local and a remote computer, <i>WinSCP</i> offers basic file manager and file synchronization 
+						functionality.<br/><br/>
+
+						<ul style="margin-left: 3rem;">
+							<li>Download WinSCP <a rel="nofollow" class="external text" href="http://winscp.net/eng/download.php">here</a>;<br></li>
+							<li>Execute <code>WinSCP.exe</code>;<br></li>
+							<li>Login to <tt>trantor01.sns.it</tt> with username and password:<br><br></li>
+						</ul>
+						<p><a href="img/Winscp1.jpg" class="image" title="caption"><img alt="caption" src="img/Winscp1.jpg" ></a><br><br>
+						<a href="img/Winscp2.jpg" class="image" title="caption"><img alt="caption" src="img/Winscp2.jpg" ></a>
+						</p>
+						<h3 style="font-size: 1.3em"><span class="mw-headline" id="Using_Linux">Using Linux</span></h3>
+						<p>To access the cluster from Linux:
+						</p>
+						<ul style="margin-left: 3rem;">
+							<li>Open Gnome Terminal or any other terminal emulator;</li>
+							<li>Install SSH if you don't have it already; refer to the documentation of you Linux distro to know how to do it;</li>
+							<li>Type <tt>ssh <i>yourusername</i>@trantor01.sns.it</tt>;</li>
+							<li>Type your password;</li>
+							<li>Do your stuff.</li>
+						</ul>
+						<p>To close the session, type <code>exit</code> or press CTRL + D. For secure file transfer, you can use the command line utilities <i>scp</i> or <i>sftp</i>, 
+							for example:
+						</p>
+						<pre>$ scp -r yourusername@trantor01.sns.it:mydata/myresults ./localdir/</pre>
+						<p><i>scp</i> starts the relative path from the user home directory; the <code>-r</code> switch is used to recursively copy the directory and its content. 
+							<br/>As an alternative, you can also use built in remote capabilities in a file-browser such as Nautilus in Gnome:
+						</p>
+						<ul style="margin-left: 3rem;">
+							<li>Open file browser (Nautilus);<br></li>
+							<li>Switch to “Go To” view: use key combination CTRL + L;<br></li>
+							<li>In “Go-to” input box type <a rel="nofollow" class="external free" href="sftp://trantor01.sns.it">sftp://trantor01.sns.it</a>;<br></li>
+							<li>Type your username and password, then select “connect”.</li>
+						</ul>
+						<h3 style="font-size: 1.3em"><span class="mw-headline" id="Using_MacOS_X">Using MacOS X</span></h3>
+						<p>This is how to login the cluster from a Mac, it works more or less like in Linux (see above):</p>
+						<ul style="margin-left: 3rem;">
+							<li>Open Terminal;</li>
+							<li>Type <tt>ssh <i>yourusername</i>@trantor01.sns.it</tt>;</li>
+							<li>Type your password;</li>
+							<li>Do your stuff.</li></ul>
+						<p>To close the session, type <code>exit</code> or press CTRL + D. Refer to the Linux paragraph for instructions on how to use SCP.
+						</p>
+					</div>
+					<div>
+						<h2 id="Getting_started_X2Go">Getting started with X2Go</h2>
+						<p>
+
+							In addition to ssh access, some of the head-nodes
+							(such as <em>trantor03.sns.it</em>) also provides
+							a <b>remote desktop environment</b>.  In particular,
+							they are equipped with the
+							<a href="https://www.xfce.org"><b>Xfce</b></a> desktop environment
+							and a <a href="https://wiki.x2go.org"><b>X2Go</b></a> server.
+						</p>
+						<p>
+							To use remote desktop, you first need to install the <b>X2Go</b> client.
+							You can refer to the 
+							<a href="https://wiki.x2go.org/doku.php/doc:installation:x2goclient">
+								official documentation
+							</a>
+							for instructions on how to install the client on various platforms.
+						</p>
+						<p>
+							Once the client is up and running, create a new session by selecting
+							the menu item "<em>Session --> New session..</em>.". A new dialog will
+							appear, asking for connection details. Fill the form as follows:
+						</p>
+						<ul style="margin-left: 3rem;">
+							<li><b>Session name</b>: whatever you like (eg. 'Trantor03')</li>
+							<li><b>Host</b>: the fully-qualified domain name of the head-node (eg. trantor03.sns.it)</li>
+							<li><b>Login</b>: your username</li>
+							<li><b>Session type</b>: XFCE</li>
+						</ul>
+						<p><img src="img/Trantor03SessionPreferences.jpg"></p>
+						<p>
+							Then press "OK" to save the session preferences.
+							A small gray box representing the session will appear
+							at the right side of the window:
+						</p>
+						<p><img src="img/X2GoMainWin.jpg"></p>
+						<p>
+							Click on it. A login dialog will appear.
+							Inserts your credentials and press "Ok":
+						</p>
+						<p><img src="img/X2GoLoginDialog.jpg"></p>
+						<p>
+							The remote desktop window should start in a few seconds.
+						</p>
+						<p>
+							<b>Hint</b><br/>
+							Test if the keyboard numpad is working correctly
+							within the remote desktop. If not, open the Xfce's 
+							keyboard settings and disable the 
+							"Restore num lock state on startup" checkbox.
+							Finally, close and re-open the X2Go session.
+						</p>
+						<p><img src="img/XfceKeySettings.jpg"></p>
+					</div>
+				</div>
+
+			</div>					
+ 		</div>
+
+
+	</div>
+	</div>
+	
+  <hr>
+<!--
+	<div id="footer" role="contentinfo" style="margin: 0 0 0 5px ">
+
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="docs/HPC_Wiki:Privacy_policy" title="HPC Wiki:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="docs/HPC_Wiki:About" title="HPC Wiki:About">About HPC Wiki</a></li>
+								<li id="footer-places-disclaimer"><a href="docs/HPC_Wiki:General_disclaimer" title="HPC Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+						<div style="clear: both;"></div>
+	</div>
+-->				
+
+<div class="credits">
+    <div class="container">
+
+        <div class="author">
+            <a href=""  target="_blank">
+                2020 HPC Center SNS - Inspired at github.com/Lednerb Bilberry Hugo Theme
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="../../../theme.js"></script>
+
+    
+
+</body>
+
+</html>

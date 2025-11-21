@@ -1,0 +1,294 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+	<title>Basic Linux Commands - HPC Wiki</title>
+    <meta itemprop="name" content="WIKI">
+    <meta property="og:title" content="WIKI">
+    <meta property="og:url" content="/page/wiki/pages/">
+    <meta property="og:site_name" content="High Performance Computing Center">
+    <meta property="og:type" content="article">
+
+    
+
+
+    
+    <link href="../" rel="alternate" type="application/rss+xml" title="High Performance Computing Center" />
+    <link href="../" rel="feed" type="application/rss+xml" title="High Performance Computing Center" />
+    
+    
+<link rel="shortcut icon" href="../../../logo.ico">
+
+<link rel="stylesheet" href="../../../theme.css">
+
+</head>
+
+<body class="BilboBaggins-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+                    
+            <li><a href="../../about/index.html">About</a></li>
+            
+            
+            
+            <li><a href="../../news/index.html">News</a></li>
+            
+            
+            
+            <li><a href="../../people/index.html">People</a></li>
+            
+            
+            
+            <li><a href="../../wiki/index.html">WIKI</a></li>         
+            
+
+            
+            <li><a href="../../research-support/index.html">Research support</a></li>
+            
+            
+            
+            <li><a href="../../forms/index.html">Forms</a></li>
+                        
+            
+            
+            <li><a href="../../privacy/index.html">Privacy policy</a></li>
+            
+            
+            
+            <li><a href="../../contacts/index.html">Contacts</a></li>
+            
+        </ul>
+        
+    </div>
+</nav>
+
+
+    
+<header>
+
+    <div class="container">
+        <div class="logo">
+            <a id="siteBaseUrl" href="../../../index.html" class="logo">
+                
+                <img src="../../../logo.png" alt="" height=177>                
+
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title"><a href="../../../index.html">High Performance Computing Center</a></h3>
+            
+            <span class="subtitle">Scuola Normale Superiore</span>
+            
+        </div>
+
+        
+            <div class="toggler">
+                
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+</header>
+
+
+    <div class="main container">
+        
+     
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://www.sns.it/it/centro-high-performance-computing">
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    
+	<div id="content" class="mw-body" role="main">
+
+
+				<div id="mw-content-text" dir="ltr" class="mw-content-ltr" lang="en">
+					<div class="mw-parser-output">
+						<p>This is just a super quick list. You need a minimum of proficiency with <b>Unix</b> shells (<i>bash</i> and <i>tcsh</i> are the ones mostly used on the cluster) and Linux systems.<br><br>
+						</p>
+						<table cellspacing="0" cellpadding="20" border="1">
+							<tbody>
+								<tr>
+									<td><code>passwd</code>
+									</td>
+									<td>Changes your user password.<br>
+									<ol><li>Type your old password<br></li>
+									<li>Insert new password<br></li>
+									<li>Confirm new password<br></li></ol>
+									</td>
+								</tr>
+								<tr>
+									<td><code>ls</code>
+									</td>
+									<td>Lists folders and files in current directory
+									</td>
+								</tr>
+								<tr>
+									<td><code>mkdir</code>
+									</td>
+									<td>Create new directory into the current one <br>
+									<p><tt>mkdir <i>newdir</i><br></tt>
+									</p>
+									</td>
+								</tr>
+								<tr>
+									<td><code>cd</code>
+									</td>
+									<td>Changes directory.<br>
+									<p>Examples:<br>
+									<tt>cd test</tt> (go to a directory named 'test')<br>
+									<tt>cd ..</tt> (go to parent directory)<br>
+									<tt>cd ~</tt> (go to home directory; ~ is a short-cut for /home/<i>username</i>)<br>
+									</p>
+									</td>
+								</tr>
+								<tr>
+									<td><code>rm</code>
+									</td>
+									<td>Removes specified file or directory<br>
+									<p><tt>rm <i>filename</i></tt> (remove single <i>filename</i>)<br>
+									<tt>rm *.txt</tt> (remove ALL .txt files into current directory)<br>
+									<tt>rm -r <i>dirname</i></tt> (remove directory and all the files it contains)<br><br>
+									<b>Please be careful when you use the -f option!</b>&nbsp;:-)
+									</p>
+									</td>
+								</tr>
+								<tr>
+									<td><code>rmdir</code>
+									</td>
+									<td>Removes specified EMPTY directory <br>
+									<p><tt>rmdir <i>dirname</i></tt><br>
+									</p>
+									</td>
+								</tr>
+								<tr>
+									<td><code>pwd</code>
+									</td>
+									<td>Prints current absolute path <br>
+									</td>
+								</tr>
+								<tr>
+									<td><code>man</code>
+									</td>
+									<td>Shows specified command's manual page <br>
+									<p><tt>man ls</tt> (shows <tt>ls</tt> help)<br>
+									</p>
+									</td>
+								</tr>
+								<tr>
+									<td><code>vi <i>x.sh</i></code>
+									</td>
+									<td>VI is a <i>text editor</i>. If <i>x.sh</i> does not exists, <tt>vi</tt> creates a new file called <i>x.sh</i> and opens it;<br>
+									<p>otherwise, it just opens the existing file.<br>
+									</p>
+									</td>
+								</tr>
+								<tr>
+									<td><code>less <i>textfile</i></code>
+									</td>
+									<td><tt>less</tt> is a <i>text pager</i>. Opens <i>textfile</i> in read-only mode. You can use up and down arrows to move across the text. It shares many commands with VI. <br>
+									</td>
+								</tr>
+								<tr>
+									<td><code>chmod</code>
+									</td>
+									<td>Changes POSIX permissions of a file or directory. Allows to protect files from unwanted access.<br>
+									<p><tt>r</tt>&nbsp;:read permission<br>
+									<tt>w</tt>&nbsp;:write permission<br>
+									<tt>x</tt>&nbsp;:exec permission<br><br>
+									<tt>chmod +x file.sh</tt> (allows execution)<br>
+									<tt>chmod -w file.sh</tt> (denies write)<br>
+									</p>
+									</td>
+								</tr>
+								<tr>
+									<td><code>chown</code>
+									</td>
+									<td>Changes owner of a file or directory <br>
+									<p><tt>chown <i>username</i> file.sh</tt> <br>
+									</p>
+									</td>
+								</tr>
+								<tr>
+									<td><code>top</code>
+									</td>
+									<td>Shows current executing processes <br>
+									</td>
+								</tr>
+								<tr>
+									<td><code>cat</code>
+									</td>
+									<td>Prints the content of a file on screen <br>
+									</td>
+								</tr>
+								<tr>
+									<td><code>grep</code>
+									</td>
+									<td>Filters the content of a file by outputting those lines which contain the specified pattern.<br>
+									<p><tt>grep pattern file.sh</tt><br>
+									You can exploit piping to filter the output of another command with grep:<br>
+									<tt>cat file.sh |grep home</tt><br>
+									<tt>cat file.sh |grep "home page"</tt><br>
+									</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p><br><br>
+							Further information on <i>Linux shell</i> can be found here:<br>
+							<a rel="nofollow" class="external text" href="http://www.tecmint.com/useful-linux-commands-for-newbies/">Useful Linux Commands for Newbies - www.tecmint.com</a><br>
+							<a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Redirection_%28computing%29">Shell Redirection - Wikipedia</a><br>
+							<a rel="nofollow" class="external text" href="http://www.tecmint.com/20-advanced-commands-for-middle-level-linux-users/">20 Advanced Commands for Middle Level Linux Users - www.tecmint.com</a><br><br>
+						</p>
+							
+				</div>
+
+			</div>					
+ 		</div>
+	</div>
+	
+	<hr>
+
+<!--	
+	<div id="footer" role="contentinfo" style="margin: 0 0 0 5px ">
+
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="docs/HPC_Wiki:Privacy_policy" title="HPC Wiki:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="docs/HPC_Wiki:About" title="HPC Wiki:About">About HPC Wiki</a></li>
+								<li id="footer-places-disclaimer"><a href="docs/HPC_Wiki:General_disclaimer" title="HPC Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+						<div style="clear: both;"></div>
+	</div>
+-->			
+
+<div class="credits">
+    <div class="container">
+
+        <div class="author">
+            <a href=""  target="_blank">
+                2020 HPC Center SNS - Inspired at github.com/Lednerb Bilberry Hugo Theme
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="../../../theme.js"></script>
+
+    
+
+</body>
+
+</html>

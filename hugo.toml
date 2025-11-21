@@ -1,0 +1,50 @@
+baseURL = 'https://hpccenter.sns.it/'
+languageCode = 'en-us'
+title = 'High Performance Computing Center'
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/page/about/"
+    weight = 10
+  [[menu.main]]
+    identifier = "news"
+    name = "News"
+    url = "/page/news/"
+    weight = 20
+  [[menu.main]]
+    identifier = "people"
+    name = "People"
+    url = "/page/people/"
+    weight = 30
+  [[menu.main]]
+    identifier = "wiki"
+    name = "WIKI"
+    url = "/page/wiki/"
+    weight = 40
+  [[menu.main]]
+    identifier = "research-support"
+    name = "Research support"
+    url = "/page/research-support/"
+    weight = 50
+  [[menu.main]]
+    identifier = "forms"
+    name = "Forms"
+    url = "/page/forms/"
+    weight = 60
+  [[menu.main]]
+    identifier = "privacy"
+    name = "Privacy policy"
+    url = "/page/privacy/"
+    weight = 70
+  [[menu.main]]
+    identifier = "contacts"
+    name = "Contacts"
+    url = "/page/contacts/"
+    weight = 80
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
