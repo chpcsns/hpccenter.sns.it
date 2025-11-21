@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="container">
+    <div class="row">
+        <div class="twelve columns">
+            <h1>{{ .Title }}</h1>
+            {{ .Content }}
+            
+            <ul>
+            {{ range .Pages }}
+                <li>
+                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    {{ if .Date }} - <small>{{ .Date.Format "Jan 2, 2006" }}</small>{{ end }}
+                </li>
+            {{ end }}
+            </ul>
+        </div>
+    </div>
+</div>
+{{ end }}
