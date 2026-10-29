@@ -1,0 +1,29 @@
+- name: Lucio Pileggi
+  role: Operating Officer
+  picture: https://www.sns.it/themes/custom/sns/images/placeholder.png
+  email: lucio.pileggi@sns.it
+
+- name: Sergio Fenicia
+  role: Network and infrastructure maintenance, Administration of UNIX systems dedicated to scientific calculation and software development
+  picture: https://www.sns.it/sites/default/files/ugov_fotopersona_7770.png
+  email: sergio.fenicia@sns.it
+
+- name: Mariano Mirra
+  role: Network and infrastructure maintenance, Administration of UNIX systems dedicated to the Humanities
+  picture: https://www.sns.it/sites/default/files/ugov_fotopersona_4405.png
+  email: mariano.mirra@sns.it
+
+- name: Alberto Coduti
+  role: Network and infrastructure maintenance, Administration of UNIX systems dedicated to scientific calculation and software development
+  picture: https://www.sns.it/sites/default/files/ugov_fotopersona_18085.png
+  email: alberto.coduti@sns.it
+
+- name: Andrea Ficini
+  role: Web and database development
+  picture: https://www.sns.it/sites/default/files/ugov_fotopersona_7564.jpg
+  email: andrea.ficini@sns.it
+
+- name: Mattia Bondanza
+  role: Administration of UNIX systems dedicated to scientific calculation and software development
+  picture: https://www.sns.it/sites/default/files/ugov_fotopersona_171048.png
+  email: mattia.bondanza@sns.it

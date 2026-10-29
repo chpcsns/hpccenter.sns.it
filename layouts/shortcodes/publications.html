@@ -1,0 +1,90 @@
+{{/*
+  publications shortcode
+  Usage: {{< publications >}} or {{< publications limit=50 year=2024 >}}
+*/}}
+
+<style>
+.pub-list .pub-entry {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--pf-color-border-default, #e5e7eb);
+  line-height: 1.6;
+}
+.pub-list .pub-entry:last-child {
+  border-bottom: none;
+}
+.pub-list .pub-number {
+  font-weight: 600;
+  color: #1eaedb;
+  margin-right: 0.25rem;
+  min-width: 2em;
+  display: inline-block;
+}
+.pub-list .pub-authors {
+  font-style: italic;
+}
+.pub-list .pub-year {
+  margin-left: 0.25rem;
+}
+.pub-list .pub-title {
+  margin-left: 0.25rem;
+}
+.pub-list .pub-venue {
+  margin-left: 0.25rem;
+}
+.pub-list .pub-doi,
+.pub-list .pub-arxiv,
+.pub-list .pub-pmid {
+  margin-right: 0.75rem;
+  font-size: 0.9em;
+}
+.pub-list .pub-more {
+  text-align: center;
+  color: var(--pf-color-muted, #6b7280);
+  margin-top: 1rem;
+  font-style: italic;
+}
+</style>
+
+{{ $data := hugo.Data.publications }}
+{{ $pubs := $data }}
+
+{{/* Filter by year if provided */}}
+{{ if .Get "year" }}
+  {{ $year := .Get "year" | int }}
+  {{ $pubs = where $pubs "year" $year }}
+{{ end }}
+
+{{/* Apply limit */}}
+{{ $limit := len $data }}
+{{ if .Get "limit" }}
+  {{ $limit = .Get "limit" | int }}
+{{ end }}
+
+{{ $shown := first $limit $pubs }}
+{{ $hasMore := gt (len $pubs) $limit }}
+
+<div class="pub-list">
+  {{ range $i, $pub := $shown }}
+    <div class="pub-entry">
+      <span class="pub-number">{{ add $i 1 }}.</span>
+      <span class="pub-authors">{{ delimit $pub.authors ", " }}</span>
+      <span class="pub-year">({{ $pub.year }}).</span>
+      <span class="pub-title">{{ $pub.title }}.</span>
+      {{- with or $pub.venue (or $pub.volume $pub.pages) -}}
+        <span class="pub-venue">
+          {{- if $pub.venue }}{{ $pub.venue }}{{ end -}}
+          {{- if $pub.volume }}, {{ $pub.volume }}{{ end -}}
+          {{- if $pub.issue }}({{ $pub.issue }}){{ end -}}
+          {{- if $pub.pages }}, {{ $pub.pages }}{{ end -}}
+        </span>
+      {{ end -}}
+      {{ if $pub.doi }}<br><a href="{{ $pub.doi }}" target="_blank" rel="noopener" class="pub-doi">DOI: {{ $pub.doi }}</a>{{ end }}
+      {{ if $pub.arxiv }}<a href="https://arxiv.org/abs/{{ $pub.arxiv }}" target="_blank" rel="noopener" class="pub-arxiv">arXiv: {{ $pub.arxiv }}</a>{{ end }}
+      {{ if $pub.pmid }}<a href="https://pubmed.ncbi.nlm.nih.gov/{{ $pub.pmid }}/" target="_blank" rel="noopener" class="pub-pmid">PMID: {{ $pub.pmid }}</a>{{ end }}
+    </div>
+  {{ end }}
+
+  {{ if $hasMore }}
+    <p class="pub-more">… and {{ sub (len $pubs) $limit }} more</p>
+  {{ end }}
+</div>

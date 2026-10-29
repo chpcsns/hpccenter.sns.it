@@ -1,0 +1,1475 @@
+- title: 'plasmonX: An open-source code for nanoplasmonics'
+  authors:
+  - Giovannini, Tommaso
+  - Grobas Illobre, Pablo
+  - Lafiosca, Piero
+  - Nicoli, Luca
+  - Bonatti, Luca
+  - Corni, Stefano
+  - Cappelli, Chiara
+  year: 2026
+  venue: Computer Physics Communications
+  volume: '322'
+  issue: ''
+  pages: '110035'
+  doi: https://doi.org/10.1016/j.cpc.2026.110035
+  arxiv: null
+  pmid: null
+- title: Atomistic QM/Classical Modeling of Surface-Enhanced Infrared Absorption
+  authors:
+  - Sodomaco, Sveva
+  - Lafiosca, Piero
+  - Giovannini, Tommaso
+  - Cappelli, Chiara
+  year: 2026
+  venue: The Journal of Physical Chemistry C
+  volume: '130'
+  issue: '5'
+  pages: 1919–1930
+  doi: https://doi.org/10.1021/acs.jpcc.5c07549
+  arxiv: null
+  pmid: null
+- title: Electric Field Enhancements and Hot Spots in Amorphous Carbon Materials
+  authors:
+  - Grobas Illobre, Pablo
+  - Conter, Giorgio
+  - Bonatti, Luca
+  - Giovannini, Tommaso
+  - Fortunelli, Alessandro
+  - Cappelli, Chiara
+  year: 2026
+  venue: Small Structures
+  volume: '7'
+  issue: '3'
+  pages: e202500733
+  doi: https://doi.org/10.1002/sstr.202500733
+  arxiv: null
+  pmid: null
+- title: The Electric Field Morphology of Plasmonic Picocavities
+  authors:
+  - Giovannini, Tommaso
+  - Nicoli, Luca
+  - Corni, Stefano
+  - Cappelli, Chiara
+  year: 2025
+  venue: Nano Letters
+  volume: '25'
+  issue: '27'
+  pages: 10802–10808
+  doi: https://doi.org/10.1021/acs.nanolett.5c01999
+  arxiv: null
+  pmid: null
+- title: Tentative rotation in a galaxy at z ∼ 14 with ALMA
+  authors:
+  - Scholtz, J.
+  - Parlanti, E.
+  - Carniani, S.
+  - Kohandel, M.
+  - Sun, F.
+  - Danhaive, A. L.
+  - Maiolino, R.
+  - Arribas, S.
+  - Bhatawdekar, R.
+  - Bunker, A. J.
+  - Charlot, S.
+  - D’Eugenio, F.
+  - Ferrara, A.
+  - Ji, Z.
+  - Jones, Gareth C.
+  - Rinaldi, P.
+  - Robertson, B. E.
+  - Pallottini, A.
+  - Shivaei, I.
+  - Sun, Y.
+  - Tacchella, S.
+  - Übler, H.
+  - Venturi, G.
+  year: 2025
+  venue: 'Monthly Notices of the Royal Astronomical Society: Letters'
+  volume: '544'
+  issue: '1'
+  pages: L113–L120
+  doi: https://doi.org/10.1093/mnrasl/slaf109
+  arxiv: null
+  pmid: null
+- title: Sample variance denoising in cylindrical 21 cm power spectra
+  authors:
+  - Breitman, D.
+  - Mesinger, A.
+  - Murray, S. G.
+  - Acharya, A.
+  year: 2025
+  venue: Astronomy & Astrophysics
+  volume: '703'
+  issue: ''
+  pages: A130
+  doi: https://doi.org/10.1051/0004-6361/202556449
+  arxiv: null
+  pmid: null
+- title: Mapping reionization bubbles in JWST era - II. Inferring the position and characteristic size of individual bubbles
+  authors:
+  - Nikolić, I.
+  - Mesinger, A.
+  - Mason, C. A.
+  - Lu, T.-Y.
+  - Tang, M.
+  - Prelogović, D.
+  - Gagnon-Hartman, S.
+  - Stark, D. P.
+  year: 2025
+  venue: Astronomy & Astrophysics
+  volume: '699'
+  issue: ''
+  pages: A323
+  doi: https://doi.org/10.1051/0004-6361/202553756
+  arxiv: null
+  pmid: null
+- title: 'CellHit: a web server to predict and analyze cancer patients'' drug responsiveness'
+  authors:
+  - Carli, F.
+  - De Oliveira Rosa, N.
+  - Blotas, S.
+  - Di Chiaro, P.
+  - Bisceglia, L.
+  - Morelli, M.
+  - Lessi, F.
+  - Di Stefano, A. L.
+  - Mazzanti, C. M.
+  - Natoli, G.
+  - Raimondi, F.
+  year: 2025
+  venue: Nucleic acids research
+  volume: ''
+  issue: ''
+  pages: ''
+  doi: https://doi.org/10.1093/nar/gkaf414
+  arxiv: null
+  pmid: null
+- title: Learning and actioning general principles of cancer cell drug sensitivity
+  authors:
+  - Carli, F.
+  - Di Chiaro, P.
+  - Morelli, M.
+  - Arora, C.
+  - Bisceglia, L.
+  - De Oliveira Rosa, N.
+  - Cortesi, A.
+  - Franceschi, S.
+  - Lessi, F.
+  - Di Stefano, A. L.
+  - Santonocito, O. S.
+  - Pasqualetti, F.
+  - Aretini, P.
+  - Miglionico, P.
+  - Diaferia, G. R.
+  - Giannotti, F.
+  - Liò, P.
+  - Duran-Frigola, M.
+  - Mazzanti, C. M.
+  - Natoli, G.
+  - Raimondi, F.
+  year: 2025
+  venue: Nature Communications
+  volume: '16'
+  issue: '1'
+  pages: ''
+  doi: https://doi.org/10.1038/s41467-025-56827-5
+  arxiv: null
+  pmid: null
+- title: 'The mass-metallicity relation as a ruler for galaxy evolution: Insights from the James Webb Space Telescope'
+  authors:
+  - Pallottini, A.
+  - Ferrara, A.
+  - Gallerani, S.
+  - Sommovigo, L.
+  - Carniani, S.
+  - Vallini, L.
+  - Kohandel, M.
+  - Venturi, G.
+  year: 2025
+  venue: Astronomy & Astrophysics
+  volume: '699'
+  issue: ''
+  pages: A6
+  doi: https://doi.org/10.1051/0004-6361/202451742
+  arxiv: null
+  pmid: null
+- title: The evolution of dust attenuation in z ≈ 2–12 galaxies observed by JWST
+  authors:
+  - Markov, V.
+  - Gallerani, S.
+  - Ferrara, A.
+  - Pallottini, A.
+  - Parlanti, E.
+  - Di Mascia, F.
+  - Sommovigo, L.
+  - Kohandel, M.
+  year: 2025
+  venue: ''
+  volume: ''
+  issue: ''
+  pages: ''
+  doi: https://doi.org/10.1038/s41550-024-02426-1
+  arxiv: null
+  pmid: null
+- title: 'Simulating Metal Complex Formation and Ligand Exchange: Unraveling the Interplay between Entropy, Kinetics, and
+    Mechanisms on the Chelate Effect'
+  authors:
+  - Sagresti, L.
+  - Benedetti, L.
+  - Merz, K. M.
+  - Brancato, G.
+  year: 2025
+  venue: Journal of Chemical Theory and Computation
+  volume: '21'
+  issue: '18'
+  pages: 8950-8962
+  doi: https://doi.org/10.1021/acs.jctc.5c01079
+  arxiv: null
+  pmid: null
+- title: Mixed atomistic-implicit quantum/classical approach to molecular nanoplasmonics
+  authors:
+  - Illobre, P. G.
+  - Lafiosca, P.
+  - Bonatti, L.
+  - Giovannini, T.
+  - Cappelli, C.
+  year: 2025
+  venue: The Journal of Chemical Physics
+  volume: '162'
+  issue: '4'
+  pages: ''
+  doi: https://doi.org/10.1063/5.0245629
+  arxiv: null
+  pmid: null
+- title: Fully Polarizable Multiconfigurational Self-Consistent Field/Fluctuating Charges Approach
+  authors:
+  - Sepali, Chiara
+  - Goletto, Linda
+  - Lafiosca, Piero
+  - Rinaldi, Matteo
+  - Giovannini, Tommaso
+  - Cappelli, Chiara
+  year: 2024
+  venue: Journal of Chemical Theory and Computation
+  volume: '20'
+  issue: '22'
+  pages: 9954–9967
+  doi: https://doi.org/10.1021/acs.jctc.4c01125
+  arxiv: null
+  pmid: null
+- title: Atomistic Multiscale Modeling of Colloidal Plasmonic Nanoparticles
+  authors:
+  - Nicoli, Luca
+  - Sodomaco, Sveva
+  - Lafiosca, Piero
+  - Giovannini, Tommaso
+  - Cappelli, Chiara
+  year: 2024
+  venue: ACS Physical Chemistry Au
+  volume: '4'
+  issue: '6'
+  pages: 669–678
+  doi: https://doi.org/10.1021/acsphyschemau.4c00052
+  arxiv: null
+  pmid: null
+- title: The Role of Hydrogen Bonding in the Raman Spectral Signals of Caffeine in Aqueous Solution
+  authors:
+  - Gómez, Sara
+  - Cappelli, Chiara
+  year: 2024
+  venue: Molecules
+  volume: '29'
+  issue: '13'
+  pages: '3035'
+  doi: https://doi.org/10.3390/molecules29133035
+  arxiv: null
+  pmid: null
+- title: 'When Tautomers Matter: UV-Vis Absorption Spectra of Hypoxanthine in Aqueous Solution from Fully Atomistic Simulations'
+  authors:
+  - Gómez, Sara
+  - Cappelli, Chiara
+  year: 2024
+  venue: ChemPhysChem
+  volume: '25'
+  issue: '16'
+  pages: e202400107
+  doi: https://doi.org/10.1002/cphc.202400107
+  arxiv: null
+  pmid: null
+- title: Time-Dependent Multilevel Density Functional Theory
+  authors:
+  - Giovannini, Tommaso
+  - Scavino, Marco
+  - Koch, Henrik
+  year: 2024
+  venue: Journal of Chemical Theory and Computation
+  volume: '20'
+  issue: '9'
+  pages: '3601–3612. PMID: 38648031'
+  doi: https://doi.org/10.1021/acs.jctc.4c00041
+  arxiv: null
+  pmid: '38648031'
+- title: Close-Up Look at Electronic Spectroscopic Signatures of Common Pharmaceuticals in Solution
+  authors:
+  - Gómez, Sara
+  - Ambrosetti, Matteo
+  - Giovannini, Tommaso
+  - Cappelli, Chiara
+  year: 2024
+  venue: The Journal of Physical Chemistry B
+  volume: '128'
+  issue: '10'
+  pages: 2432–2446
+  doi: https://doi.org/10.1021/acs.jpcb.3c07795
+  arxiv: null
+  pmid: null
+- title: 'Deciphering the structure of deep eutectic solvents: A computational study from the solute''s viewpoint'
+  authors:
+  - Sepali, Chiara
+  - Skoko, Sulejman
+  - Guglielmero, Luca
+  - Giovannini, Tommaso
+  - Mezzetta, Andrea
+  - D’Andrea, Felicia
+  - Pomelli, Christian Silvio
+  - Guazzelli, Lorenzo
+  - Cappelli, Chiara
+  year: 2024
+  venue: Journal of Molecular Liquids
+  volume: '399'
+  issue: ''
+  pages: '124326'
+  doi: https://doi.org/10.1016/j.molliq.2024.124326
+  arxiv: null
+  pmid: null
+- title: Multiscale Frozen Density Embedding/Molecular Mechanics Approach for Simulating Magnetic Response Properties of Solvated
+    Systems
+  authors:
+  - Lafiosca, Piero
+  - Rossi, Federico
+  - Egidi, Franco
+  - Giovannini, Tommaso
+  - Cappelli, Chiara
+  year: 2024
+  venue: Journal of Chemical Theory and Computation
+  volume: '20'
+  issue: '1'
+  pages: 266–279
+  doi: https://doi.org/10.1021/acs.jctc.3c00850
+  arxiv: null
+  pmid: null
+- title: The importance of stochasticity in determining galaxy emissivities and UV LFs during cosmic dawn and reionization
+  authors:
+  - Nikolić, I.
+  - Mesinger, A.
+  - Davies, J. E.
+  - Prelogović, D.
+  year: 2024
+  venue: Astronomy & Astrophysics
+  volume: '692'
+  issue: ''
+  pages: A142
+  doi: https://doi.org/10.1051/0004-6361/202451213
+  arxiv: null
+  pmid: null
+- title: The landscape of cancer-rewired GPCR signaling axes
+  authors:
+  - Arora, C.
+  - Matic, M.
+  - Bisceglia, L.
+  - Di Chiaro, P.
+  - De Oliveira Rosa, N.
+  - Carli, F.
+  - Clubb, L.
+  - Nemati Fard, L. A.
+  - Kargas, G.
+  - Diaferia, G. R.
+  - Vukotic, R.
+  - Licata, L.
+  - Wu, G.
+  - Natoli, G.
+  - Gutkind, J. S.
+  - Raimondi, F.
+  year: 2024
+  venue: Cell Genomics
+  volume: '4'
+  issue: '5'
+  pages: '100557'
+  doi: https://doi.org/10.1016/j.xgen.2024.100557
+  arxiv: null
+  pmid: null
+- title: Emulating the interstellar medium chemistry with neural operators
+  authors:
+  - Branca, L. & Pallottini
+  - A.
+  year: 2024
+  venue: Astronomy & Astrophysics
+  volume: '684'
+  issue: ''
+  pages: A203
+  doi: https://doi.org/10.1051/0004-6361/202449193
+  arxiv: null
+  pmid: null
+- title: Computational Insights into the Adsorption of Ligands on Gold Nanosurfaces
+  authors:
+  - Sodomaco, Sveva
+  - Gómez, Sara
+  - Giovannini, Tommaso
+  - Cappelli, Chiara
+  year: 2023
+  venue: The Journal of Physical Chemistry A
+  volume: '127'
+  issue: '48'
+  pages: 10282–10294
+  doi: https://doi.org/10.1021/acs.jpca.3c05560
+  arxiv: null
+  pmid: null
+- title: 'Fully atomistic modeling of plasmonic bimetallic nanoparticles: nanoalloys and core-shell systems'
+  authors:
+  - Nicoli, Luca
+  - Lafiosca, Piero
+  - Grobas Illobre, Pablo
+  - Bonatti, Luca
+  - Giovannini, Tommaso
+  - Cappelli, Chiara
+  year: 2023
+  venue: Frontiers in Photonics
+  volume: '4'
+  issue: ''
+  pages: '1199598'
+  doi: https://doi.org/10.3389/fphot.2023.1199598
+  arxiv: null
+  pmid: null
+- title: QM/Classical Modeling of Surface Enhanced Raman Scattering Based on Atomistic Electromagnetic Models
+  authors:
+  - Lafiosca, Piero
+  - Nicoli, Luca
+  - Bonatti, Luca
+  - Giovannini, Tommaso
+  - Corni, Stefano
+  - Cappelli, Chiara
+  year: 2023
+  venue: Journal of Chemical Theory and Computation
+  volume: '19'
+  issue: '12'
+  pages: 3616–3633
+  doi: https://doi.org/10.1021/acs.jctc.3c00177
+  arxiv: null
+  pmid: null
+- title: Towards a cost-effective modeling of fluorescence in the condensed phase
+  authors:
+  - Skoko, Sulejman
+  - Micheletti, Cosimo
+  - Grifoni, Emanuele
+  - Egidi, Franco
+  - Giovannini, Tommaso
+  - Pucci, Andrea
+  - Cappelli, Chiara
+  year: 2023
+  venue: Dyes and Pigments
+  volume: '215'
+  issue: ''
+  pages: '111227'
+  doi: https://doi.org/10.1016/j.dyepig.2023.111227
+  arxiv: null
+  pmid: null
+- title: Water Maintains the UV-Vis Spectral Features During the Insertion of Anionic Naproxen and Ibuprofen into Model Cell
+    Membranes
+  authors:
+  - Rojas-Valencia, Natalia
+  - Gómez, Sara
+  - Giovannini, Tommaso
+  - Cappelli, Chiara
+  - Restrepo, Albeiro
+  - Núñez-Zarur, Francisco
+  year: 2023
+  venue: The Journal of Physical Chemistry B
+  volume: '127'
+  issue: '10'
+  pages: 2146–2155
+  doi: https://doi.org/10.1021/acs.jpcb.2c08332
+  arxiv: null
+  pmid: null
+- title: Integrated Multiscale Multilevel Approach to Open Shell Molecular Systems
+  authors:
+  - Giovannini, Tommaso
+  - Marrazzini, Gioia
+  - Scavino, Marco
+  - Koch, Henrik
+  - Cappelli, Chiara
+  year: 2023
+  venue: Journal of Chemical Theory and Computation
+  volume: '19'
+  issue: '5'
+  pages: 1446–1456
+  doi: https://doi.org/10.1021/acs.jctc.2c00805
+  arxiv: null
+  pmid: null
+- title: 'UV-Resonance Raman Spectra of Systems in Complex Environments: A Multiscale Modeling Applied to Doxorubicin Intercalated
+    into DNA'
+  authors:
+  - Gómez, Sara
+  - Lafiosca, Piero
+  - Egidi, Franco
+  - Giovannini, Tommaso
+  - Cappelli, Chiara
+  year: 2023
+  venue: Journal of Chemical Information and Modeling
+  volume: '63'
+  issue: '4'
+  pages: 1208–1217
+  doi: https://doi.org/10.1021/acs.jcim.2c01495
+  arxiv: null
+  pmid: null
+- title: Strain-Induced Plasmon Confinement in Polycrystalline Graphene
+  authors:
+  - Zanotto, Simone
+  - Bonatti, Luca
+  - Pantano, Maria F.
+  - Miseikis, Vaidotas
+  - Speranza, Giorgio
+  - Giovannini, Tommaso
+  - Coletti, Camilla
+  - Cappelli, Chiara
+  - Tredicucci, Alessandro
+  - Toncelli, Alessandra
+  year: 2023
+  venue: ACS Photonics
+  volume: '10'
+  issue: '1'
+  pages: 394–400
+  doi: https://doi.org/10.1021/acsphotonics.2c01157
+  arxiv: null
+  pmid: null
+- title: Multiple Facets of Modeling Electronic Absorption Spectra of Systems in Solution
+  authors:
+  - Gómez, Sara
+  - Giovannini, Tommaso
+  - Cappelli, Chiara
+  year: 2023
+  venue: ACS Physical Chemistry Au
+  volume: '3'
+  issue: '1'
+  pages: 1–16
+  doi: https://doi.org/10.1021/acsphyschemau.2c00050
+  arxiv: null
+  pmid: null
+- title: 'Neural networks: solving the chemistry of the interstellar medium'
+  authors:
+  - Branca, L. & Pallottini
+  - A.
+  year: 2023
+  venue: Monthly Notices of the Royal Astronomical Society
+  volume: '518'
+  issue: '4'
+  pages: 5718-5733
+  doi: https://doi.org/10.1093/mnras/stac3512
+  arxiv: null
+  pmid: null
+- title: GPCRome-wide analysis of G-protein-coupling diversity using a computational biology approach
+  authors:
+  - Matic, M.
+  - Miglionico, P.
+  - Tatsumi, M.
+  - Inoue, A.
+  - Raimondi, F.
+  year: 2023
+  venue: Nature Communications
+  volume: '14'
+  issue: '1'
+  pages: ''
+  doi: https://doi.org/10.1038/s41467-023-40045-y
+  arxiv: null
+  pmid: null
+- title: 'EXPANSION: a webserver to explore the functional consequences of protein-coding alternative splice variants in cancer
+    genomics'
+  authors:
+  - Arora, C.
+  - De Oliveira Rosa, N.
+  - Matic, M.
+  - Cascone, M.
+  - Miglionico, P.
+  - Raimondi, F.
+  year: 2023
+  venue: Bioinformatics Advances
+  volume: '3'
+  issue: '1'
+  pages: ''
+  doi: https://doi.org/10.1093/bioadv/vbad135
+  arxiv: null
+  pmid: null
+- title: Interpreting ALMA non-detections of JWST super-early galaxies
+  authors:
+  - Kohandel, M.
+  - Ferrara, A.
+  - Pallottini, A.
+  - Vallini, L.
+  - Sommovigo, L.
+  - Ziparo, F.
+  year: 2023
+  venue: 'Monthly Notices of the Royal Astronomical Society: Letters'
+  volume: '520'
+  issue: '1'
+  pages: L16-L20
+  doi: https://doi.org/10.1093/mnrasl/slac166
+  arxiv: null
+  pmid: null
+- title: Dissecting Bonding Interactions in Cysteine Dimers
+  authors:
+  - Gómez, Santiago
+  - Gómez, Sara
+  - David, Jorge
+  - Guerra, Doris
+  - Cappelli, Chiara
+  - Restrepo, Albeiro
+  year: 2022
+  venue: Molecules
+  volume: '27'
+  issue: '24'
+  pages: '8665'
+  doi: https://doi.org/10.3390/molecules27248665
+  arxiv: null
+  pmid: null
+- title: Assessing the Quality of QM/MM Approaches to Describe Vacuo-to-Water Solvatochromic Shifts
+  authors:
+  - Nicoli, Luca
+  - Giovannini, Tommaso
+  - Cappelli, Chiara
+  year: 2022
+  venue: The Journal of Chemical Physics
+  volume: '157'
+  issue: '21'
+  pages: '214101'
+  doi: https://doi.org/10.1063/5.0118664
+  arxiv: null
+  pmid: null
+- title: Fragment Localized Molecular Orbitals
+  authors:
+  - Giovannini, Tommaso
+  - Koch, Henrik
+  year: 2022
+  venue: Journal of Chemical Theory and Computation
+  volume: '18'
+  issue: '8'
+  pages: 4806–4813
+  doi: https://doi.org/10.1021/acs.jctc.2c00359
+  arxiv: null
+  pmid: null
+- title: Amide Spectral Fingerprints are Hydrogen Bonding-Mediated
+  authors:
+  - Gómez, Sara
+  - Bottari, Cettina
+  - Egidi, Franco
+  - Giovannini, Tommaso
+  - Rossi, Barbara
+  - Cappelli, Chiara
+  year: 2022
+  venue: The Journal of Physical Chemistry Letters
+  volume: '13'
+  issue: '26'
+  pages: 6200–6207
+  doi: https://doi.org/10.1021/acs.jpclett.2c01277
+  arxiv: null
+  pmid: null
+- title: Dynamical characterization of galaxies up to z ∼7
+  authors:
+  - Rizzo, F.
+  - Kohandel, M.
+  - Pallottini, A.
+  - Zanella, A.
+  - Ferrara, A.
+  - Vallini, L.
+  - Toft, S.
+  year: 2022
+  venue: Astronomy & Astrophysics
+  volume: '667'
+  issue: ''
+  pages: A5
+  doi: https://doi.org/10.1051/0004-6361/202243582
+  arxiv: '2204.05325'
+  pmid: null
+- title: Characterizing Beam Errors for Radio Interferometric Observations of Reionization
+  authors:
+  - Nasirudin, Ainulnabilah
+  - Prelogovic, David
+  - Murray, Steven G.
+  - Mesinger, Andrei
+  - Bernardi, Gianni
+  year: 2022
+  venue: MNRAS
+  volume: '514'
+  issue: '3'
+  pages: 4655–4668
+  doi: https://doi.org/10.1093/mnras/stac1588
+  arxiv: '2201.10798'
+  pmid: null
+- title: 'The 21-cm signal from the cosmic dawn: metallicity dependence of high-mass X-ray binaries'
+  authors:
+  - Kaur, Harman Deep
+  - Qin, Yuxiang
+  - Mesinger, Andrei
+  - Pallottini, Andrea
+  - Fragos, Tassos
+  - Basu-Zych, Antara
+  year: 2022
+  venue: MNRAS
+  volume: '513'
+  issue: '4'
+  pages: 5097–5108
+  doi: https://doi.org/10.1093/mnras/stac1226
+  arxiv: null
+  pmid: null
+- title: 'A survey of high-z galaxies: SERRA simulations'
+  authors:
+  - Pallottini, A.
+  - Ferrara, A.
+  - Gallerani, S.
+  - Behrens, C.
+  - Kohandel, M.
+  - Carniani, S.
+  - Vallini, L.
+  - Salvadori, S.
+  - Gelli, V.
+  - Sommovigo, L.
+  - D'Odorico, V.
+  - Di Mascia, F.
+  - Pizzati, E.
+  year: 2022
+  venue: MNRAS
+  volume: '513'
+  issue: '4'
+  pages: 5621–5641
+  doi: https://doi.org/10.1093/mnras/stac1281
+  arxiv: '2201.02636'
+  pmid: null
+- title: 'The ALMA REBELS Survey. Epoch of Reionization giants: Properties of dusty galaxies at z ≍ 7'
+  authors:
+  - Ferrara, A.
+  - Sommovigo, L.
+  - Dayal, P.
+  - Pallottini, A.
+  - Bouwens, R. J.
+  - Gonzalez, V.
+  - Inami, H.
+  - Smit, R.
+  - Bowler, R. A. A.
+  - Endsley, R.
+  - Oesch, P.
+  - Schouws, S.
+  - Stark, D.
+  - Stefanon, M.
+  - Aravena, M.
+  - da Cunha, E.
+  - De Looze, I.
+  - Fudamoto, Y.
+  - Graziani, L.
+  - Hodge, J.
+  - Riechers, D.
+  - Schneider, R.
+  - Algera, H. S. B.
+  - Barrufet, L.
+  - Hygate, A. P. S.
+  - Labbé, I.
+  - Li, C.
+  - Nanayakkara, T.
+  - Topping, M.
+  - van der Werf, P.
+  year: 2022
+  venue: MNRAS
+  volume: '512'
+  issue: '1'
+  pages: 58–72
+  doi: https://doi.org/10.1093/mnras/stac460
+  arxiv: '2202.07666'
+  pmid: null
+- title: The impact of the first galaxies on cosmic dawn and reionization
+  authors:
+  - Muñoz, Julian B.
+  - Qin, Yuxiang
+  - Mesinger, Andrei
+  - Murray, Steven G.
+  - Greig, Bradley
+  - Mason, Charlotte
+  year: 2022
+  venue: MNRAS
+  volume: '511'
+  issue: '3'
+  pages: 3657–3681
+  doi: https://doi.org/10.1093/mnras/stac185
+  arxiv: '2110.13919'
+  pmid: null
+- title: Enhanced star formation in z 6 quasar companions
+  authors:
+  - Zana, Tommaso
+  - Gallerani, Simona
+  - Carniani, Stefano
+  - Vito, Fabio
+  - Ferrara, Andrea
+  - Lupi, Alessandro
+  - Di Mascia, Fabio
+  - Barai, Paramita
+  year: 2022
+  venue: ''
+  volume: ''
+  issue: ''
+  pages: ''
+  doi: https://doi.org/10.1093/mnras/stac978
+  arxiv: '2204.03658'
+  pmid: null
+- title: Epoch of reionization parameter estimation with the 21-cm bispectrum
+  authors:
+  - Watkinson, Catherine A.
+  - Greig, Bradley
+  - Mesinger, Andrei
+  year: 2022
+  venue: MNRAS
+  volume: '510'
+  issue: '3'
+  pages: 3838–3848
+  doi: https://doi.org/10.1093/mnras/stab3706
+  arxiv: '2102.02310'
+  pmid: null
+- title: Simulating weak-field attosecond processes with a lanczos reduced basis approach to time-dependent equation-of-motion
+    coupled-cluster theory
+  authors:
+  - Skeidsvoll, Andreas S.
+  - Moitra, Torsha
+  - Balbi, Alice
+  - Paul, Alexander C.
+  - Coriani, Sonia
+  - Koch, Henrik
+  year: 2022
+  venue: Phys. Rev. A
+  volume: '105'
+  issue: ''
+  pages: '023103'
+  doi: https://doi.org/10.1103/PhysRevA.105.023103
+  arxiv: null
+  pmid: null
+- title: 'The REBELS ALMA Survey: cosmic dust temperature evolution out to z 7'
+  authors:
+  - Sommovigo, L.
+  - Ferrara, A.
+  - Pallottini, A.
+  - Dayal, P.
+  - Bouwens, R. J.
+  - Smit, R.
+  - da Cunha, E.
+  - De Looze, I.
+  - Bowler, R. A. A.
+  - Hodge, J.
+  - Inami, H.
+  - Oesch, P.
+  - Endsley, R.
+  - Gonzalez, V.
+  - Schouws, S.
+  - Stark, D.
+  - Stefanon, M.
+  - Aravena, M.
+  - Graziani, L.
+  - Riechers, D.
+  - Schneider, R.
+  - van der Werf, P.
+  - Algera, H.
+  - Barrufet, L.
+  - Fudamoto, Y.
+  - Hygate, A. P. S.
+  - Labbé, I.
+  - Li, Y.
+  - Nanayakkara, T.
+  - Topping, M.
+  year: 2022
+  venue: ''
+  volume: ''
+  issue: ''
+  pages: ''
+  doi: https://doi.org/10.1093/mnras/stac302
+  arxiv: '2202.01227'
+  pmid: null
+- title: 'Machine learning astrophysics from 21 cm lightcones: impact of network architectures and signal contamination'
+  authors:
+  - Prelogović, David
+  - Mesinger, Andrei
+  - Murray, Steven
+  - Fiameni, Giuseppe
+  - Gillet, Nicolas
+  year: 2022
+  venue: MNRAS
+  volume: '509'
+  issue: '3'
+  pages: 3852–3867
+  doi: https://doi.org/10.1093/mnras/stab3215
+  arxiv: '2107.00018'
+  pmid: null
+- title: 'HERA Phase I Limits on the Cosmic 21-cm Signal: Constraints on Astrophysics and Cosmology During the Epoch of Reionization'
+  authors:
+  - The HERA Collaboration, Abdurashidova
+  - Zara, Aguirre
+  - James E., Alexander
+  - Paul, Ali
+  - Zaki, Balfour
+  - Yanga, Barkana
+  - Rennan, Beardsley
+  - Adam, Bernardi
+  - Gianni, Billings
+  - Tashalee, Bowman
+  - Judd, Bradley
+  - Richard, Bull
+  - Phillip, Burba
+  - Jacob, Carey
+  - Steven, Carilli
+  - Christopher, Cheng
+  - Carina, DeBoer
+  - David, Dexter
+  - Matthew, Acedo
+  - Eloy de Lera, Dillon
+  - Joshua, Ely
+  - John, Ewall-Wice
+  - Aaron, Fagnoni
+  - Nicolas, Fialkov
+  - Anastasia, Fritz
+  - Randall, Furlanetto
+  - Steven, Gale-Sides
+  - Kingsley, Glendenning
+  - Brian, Gorthi
+  - Deepthi, Greig
+  - Bradley, Grobbelaar
+  - Jasper, Halday
+  - Ziyaad, Hazelton
+  - Bryna, Heimersheim
+  - Stefan, Hewitt
+  - Jacqueline, Hickish
+  - Jack, Jacobs
+  - Daniel, Julius
+  - Austin, Kern
+  - Nicholas, Kerrigan
+  - Joshua, Kittiwisit
+  - Piyanat, Kohn
+  - Saul, Kolopanis
+  - Matthew, Lanman
+  - Adam, Plante
+  - Paul La, Lekalake
+  - Telalo, Lewis
+  - David, Liu
+  - Adrian, Ma
+  - Yin-Zhe, MacMahon
+  - David, Malan
+  - Lourence, Malgas
+  - Cresshim, Maree
+  - Matthys, Martinot
+  - Zachary, Matsetela
+  - Eunice, Mesinger
+  - Andrei, Mirocha
+  - Jordan, Molewa
+  - Mathakane, Morales
+  - Miguel, Mosiane
+  - Tshegofalang, Munoz
+  - Julian, Murray
+  - Steven, Neben
+  - Abraham, Nikolic
+  - Bojan, Nunhokee
+  - Chuneeta Devi, Parsons
+  - Aaron, Patra
+  - Nipanjana, Pieterse
+  - Samantha, Pober
+  - Jonathan, Qin
+  - Yuxiang, Razavi-Ghods
+  - N., Reis
+  - Itamar, Ringuette
+  - Jon, Robnett
+  - James, Rosie
+  - Kathryn, Santos
+  - Mario, Sikder
+  - Sudipta, Sims
+  - Peter, Smith
+  - Craig, Syce
+  - Angelo, Thyagarajan
+  - Nithyanandan, Williams
+  - Peter, & Zheng
+  - Haoxuan
+  year: 2022
+  venue: The Astrophysical Journal
+  volume: '924'
+  issue: '2'
+  pages: '51'
+  doi: https://doi.org/10.3847/1538-4357/ac2ffc
+  arxiv: '2108.07282'
+  pmid: null
+- title: 'The interstellar medium of high-redshift galaxies: Gathering clues from C III] and [C II] lines'
+  authors:
+  - Markov, V.
+  - Carniani, S.
+  - Vallini, L.
+  - Ferrara, A.
+  - Pallottini, A.
+  - Maiolino, R.
+  - Gallerani, S.
+  - Pentericci, L.
+  year: 2022
+  venue: Astronomy & Astrophysics
+  volume: '663'
+  issue: ''
+  pages: A172
+  doi: https://doi.org/10.1051/0004-6361/202243336
+  arxiv: null
+  pmid: null
+- title: An explainable model of host genetic interactions linked to COVID-19 severity
+  authors:
+  - Onoja, A.
+  - Picchiotti, N.
+  - Fallerini, C.
+  - Baldassarri, M.
+  - Fava, F.
+  - Colombo, F.
+  - Chiaromonte, F.
+  - Renieri, A.
+  - Furini, S.
+  - Raimondi, F.
+  year: 2022
+  venue: Communications Biology
+  volume: '5'
+  issue: ''
+  pages: '1133'
+  doi: https://doi.org/10.1038/s42003-022-04073-6
+  arxiv: null
+  pmid: null
+- title: Stochastic model of solvent exchange in the first coordination shell of aqua ions
+  authors:
+  - Sagresti, Luca
+  - Peri, Lorenzo
+  - Ceccarelli, Giacomo
+  - Brancato, Giuseppe
+  year: 2022
+  venue: Journal of Chemical Theory and Computation
+  volume: '18'
+  issue: '5'
+  pages: '3164–3173. PMID: 35471007'
+  doi: https://doi.org/10.1021/acs.jctc.2c00181
+  arxiv: null
+  pmid: '35471007'
+- title: 'Unlocking the power of resonance raman spectroscopy: The case of amides in aqueous solution'
+  authors:
+  - Gómez, Sara
+  - Egidi, Franco
+  - Puglisi, Alessandra
+  - Giovannini, Tommaso
+  - Rossi, Barbara
+  - Cappelli, Chiara
+  year: 2022
+  venue: Journal of Molecular Liquids
+  volume: '346'
+  issue: ''
+  pages: '117841'
+  doi: https://doi.org/10.1016/j.molliq.2021.117841
+  arxiv: null
+  pmid: null
+- title: Ring vibrations to sense anionic ibuprofen in aqueous solution as revealed by resonance raman
+  authors:
+  - Gómez, Sara
+  - Rojas-Valencia, Natalia
+  - Giovannini, Tommaso
+  - Restrepo, Albeiro
+  - Cappelli, Chiara
+  year: 2022
+  venue: Molecules
+  volume: '27'
+  issue: '2'
+  pages: '442'
+  doi: https://doi.org/10.3390/molecules27020442
+  arxiv: null
+  pmid: null
+- title: 'Absorption properties of large complex molecular systems: The dftb/fluctuating charge approach'
+  authors:
+  - Lafiosca, Piero
+  - Gómez, Sara
+  - Giovannini, Tommaso
+  - Cappelli, Chiara
+  year: 2022
+  venue: Journal of chemical theory and computation
+  volume: '18'
+  issue: '3'
+  pages: 1765–1779
+  doi: https://doi.org/10.1021/acs.jctc.1c01066
+  arxiv: null
+  pmid: null
+- title: In-silico design of graphene plasmonic hot-spots
+  authors:
+  - Bonatti, Luca
+  - Nicoli, Luca
+  - Giovannini, Tommaso
+  - Cappelli, Chiara
+  year: 2022
+  venue: ''
+  volume: ''
+  issue: ''
+  pages: ''
+  doi: https://doi.org/10.1039/D2NA00088A
+  arxiv: null
+  pmid: null
+- title: Reionization and galaxy inference from the high-redshift Ly α forest
+  authors:
+  - Qin, Yuxiang
+  - Mesinger, Andrei
+  - Bosman, Sarah E. I.
+  - Viel, Matteo
+  year: 2021
+  venue: MNRAS
+  volume: '506'
+  issue: '2'
+  pages: 2390–2407
+  doi: https://doi.org/10.1093/mnras/stab1833
+  arxiv: '2101.09033'
+  pmid: null
+- title: The dust attenuation law in z 6 quasars
+  authors:
+  - Di Mascia, F.
+  - Gallerani, S.
+  - Ferrara, A.
+  - Pallottini, A.
+  - Maiolino, R.
+  - Carniani, S.
+  - D'Odorico, V.
+  year: 2021
+  venue: MNRAS
+  volume: '506'
+  issue: '3'
+  pages: 3946–3961
+  doi: https://doi.org/10.1093/mnras/stab1876
+  arxiv: '2106.15625'
+  pmid: null
+- title: 'Looking for the elusive imine tautomer of creatinine: Different states of aggregation studied by quantum chemistry
+    and molecular spectroscopy'
+  authors:
+  - Léon, Iker
+  - Tasinato, Nicola
+  - Spada, Lorenzo
+  - Alonso, Elena R.
+  - Mata, Santiago
+  - Balbi, Alice
+  - Puzzarini, Cristina
+  - Alonso, Jose L.
+  - Barone, Vincenzo
+  year: 2021
+  venue: ''
+  volume: ''
+  issue: ''
+  pages: ''
+  doi: https://doi.org/10.1002/cplu.202100224
+  arxiv: null
+  pmid: null
+- title: A tale of two sites - II. Inferring the properties of minihalo-hosted galaxies with upcoming 21-cm interferometers
+  authors:
+  - Qin, Yuxiang
+  - Mesinger, Andrei
+  - Greig, Bradley
+  - Park, Jaehong
+  year: 2021
+  venue: MNRAS
+  volume: '501'
+  issue: '4'
+  pages: 4748–4758
+  doi: https://doi.org/10.1093/mnras/staa3408
+  arxiv: '2009.11493'
+  pmid: null
+- title: Interpreting LOFAR 21-cm signal upper limits at z ≍ 9.1 in the context of high-z galaxy and reionization observations
+  authors:
+  - Greig, Bradley
+  - Mesinger, Andrei
+  - Koopmans, Léon V. E.
+  - Ciardi, Benedetta
+  - Mellema, Garrelt
+  - Zaroubi, Saleem
+  - Giri, Sambit K.
+  - Ghara, Raghunath
+  - Ghosh, Abhik
+  - Iliev, Ilian T.
+  - Mertens, Florent G.
+  - Mondal, Rajesh
+  - Offringa, André R.
+  - Pandey, Vishambhar N.
+  year: 2021
+  venue: MNRAS
+  volume: '501'
+  issue: '1'
+  pages: 1–13
+  doi: https://doi.org/10.1093/mnras/staa3593
+  arxiv: '2006.03203'
+  pmid: null
+- title: 'The role of spike protein mutations in the infectious power of sars-cov-2 variants: A molecular interaction perspective'
+  authors:
+  - Gomez, Santiago A
+  - Rojas-Valencia, Natalia
+  - Gomez, Sara
+  - Cappelli, Chiara
+  - Restrepo, Albeiro
+  year: 2021
+  venue: ''
+  volume: ''
+  issue: ''
+  pages: ''
+  doi: https://doi.org/10.1002/cbic.202100393
+  arxiv: null
+  pmid: null
+- title: Thermodynamics and intermolecular interactions during the insertion of anionic naproxen into model cell membranes
+  authors:
+  - Rojas-Valencia, Natalia
+  - Gómez, Sara
+  - Núñez-Zarur, Francisco
+  - Cappelli, Chiara
+  - Hadad, Cacier
+  - Restrepo, Albeiro
+  year: 2021
+  venue: The Journal of Physical Chemistry B
+  volume: '125'
+  issue: '36'
+  pages: '10383–10391. PMID: 34492187'
+  doi: https://doi.org/10.1021/acs.jpcb.1c06766
+  arxiv: null
+  pmid: '34492187'
+- title: A molecular twist on hydrophobicity
+  authors:
+  - Gómez, Sara
+  - Rojas-Valencia, Natalia
+  - Gómez, Santiago A.
+  - Cappelli, Chiara
+  - Merino, Gabriel
+  - Restrepo, Albeiro
+  year: 2021
+  venue: Chem. Sci.
+  volume: '12'
+  issue: ''
+  pages: 9233–9245
+  doi: https://doi.org/10.1039/D1SC02673A
+  arxiv: null
+  pmid: null
+- title: A polarizable three-layer frozen density embedding/molecular mechanics approach
+  authors:
+  - Egidi, Franco
+  - Angelico, Sara
+  - Lafiosca, Piero
+  - Giovannini, Tommaso
+  - Cappelli, Chiara
+  year: 2021
+  venue: The Journal of Chemical Physics
+  volume: '154'
+  issue: '16'
+  pages: '164107'
+  doi: https://doi.org/10.1063/5.0045574
+  arxiv: null
+  pmid: null
+- title: On the transition from a biomimetic molecular switch to a rotary molecular motor
+  authors:
+  - Paolino, Marco
+  - Giovannini, Tommaso
+  - Manathunga, Madushanka
+  - Latterini, Loredana
+  - Zampini, Giulia
+  - Pierron, Robin
+  - Léonard, Jérémie
+  - Fusi, Stefania
+  - Giorgi, Gianluca
+  - Giuliani, Germano
+  - Cappelli, Andrea
+  - Cappelli, Chiara
+  - Olivucci, Massimo
+  year: 2021
+  venue: The Journal of Physical Chemistry Letters
+  volume: '12'
+  issue: '16'
+  pages: '3875–3884. PMID: 33856801'
+  doi: https://doi.org/10.1021/acs.jpclett.1c00526
+  arxiv: null
+  pmid: '33856801'
+- title: Multilevel density functional theory
+  authors:
+  - Marrazzini, Gioia
+  - Giovannini, Tommaso
+  - Scavino, Marco
+  - Egidi, Franco
+  - Cappelli, Chiara
+  - Koch, Henrik
+  year: 2021
+  venue: Journal of Chemical Theory and Computation
+  volume: '17'
+  issue: '2'
+  pages: '791–803. PMID: 33449681'
+  doi: https://doi.org/10.1021/acs.jctc.0c00940
+  arxiv: null
+  pmid: '33449681'
+- title: 'Binding of sars-cov-2 to cell receptors: A tale of molecular evolution'
+  authors:
+  - Gómez, Santiago A.
+  - Rojas-Valencia, Natalia
+  - Gómez, Sara
+  - Egidi, Franco
+  - Cappelli, Chiara
+  - Restrepo, Albeiro
+  year: 2021
+  venue: ChemBioChem
+  volume: '22'
+  issue: '4'
+  pages: 724–732
+  doi: https://doi.org/10.1002/cbic.202000618
+  arxiv: null
+  pmid: null
+- title: Quantum mechanics/fluctuating charge protocol to compute solvatochromic shifts
+  authors:
+  - Ambrosetti, Matteo
+  - Skoko, Sulejman
+  - Giovannini, Tommaso
+  - Cappelli, Chiara
+  year: 2021
+  venue: Journal of chemical theory and computation
+  volume: '17'
+  issue: '11'
+  pages: 7146–7156
+  doi: https://doi.org/10.1021/acs.jctc.1c00763
+  arxiv: null
+  pmid: null
+- title: Going beyond the limits of classical atomistic modeling of plasmonic nanostructures
+  authors:
+  - Lafiosca, Piero
+  - Giovannini, Tommaso
+  - Benzi, Michele
+  - Cappelli, Chiara
+  year: 2021
+  venue: The Journal of Physical Chemistry C
+  volume: '125'
+  issue: '43'
+  pages: 23848–23863
+  doi: https://doi.org/10.1021/acs.jpcc.1c04716
+  arxiv: null
+  pmid: null
+- title: Reionization inference from the CMB optical depth and E-mode polarization power spectra
+  authors:
+  - Qin, Yuxiang
+  - Poulin, Vivian
+  - Mesinger, Andrei
+  - Greig, Bradley
+  - Murray, Steven
+  - Park, Jaehong
+  year: 2020
+  venue: MNRAS
+  volume: '499'
+  issue: '1'
+  pages: 550–558
+  doi: https://doi.org/10.1093/mnras/staa2797
+  arxiv: '2006.16828'
+  pmid: null
+- title: '21cmFAST v3: A Python-integrated C code for generating 3D realizations of the cosmic 21cm signal'
+  authors:
+  - Murray, Steven
+  - Greig, Bradley
+  - Mesinger, Andrei
+  - Muñoz, Julian
+  - Qin, Yuxiang
+  - Park, Jaehong
+  - Watkinson, Catherine
+  year: 2020
+  venue: The Journal of Open Source Software
+  volume: '5'
+  issue: '54'
+  pages: '2582'
+  doi: https://doi.org/10.21105/joss.02582
+  arxiv: '2010.15121'
+  pmid: null
+- title: Time-dependent coupled-cluster theory for ultrafast transient-absorption spectroscopy
+  authors:
+  - Skeidsvoll, Andreas S.
+  - Balbi, Alice
+  - Koch, Henrik
+  year: 2020
+  venue: Phys. Rev. A
+  volume: '102'
+  issue: ''
+  pages: '023115'
+  doi: https://doi.org/10.1103/PhysRevA.102.023115
+  arxiv: null
+  pmid: null
+- title: 'Simulating absorption spectra of flavonoids in aqueous solution: A polarizable qm/mm study'
+  authors:
+  - Skoko, Sulejman
+  - Ambrosetti, Matteo
+  - Giovannini, Tommaso
+  - Cappelli, Chiara
+  year: 2020
+  venue: Molecules
+  volume: '25'
+  issue: '24'
+  pages: ''
+  doi: https://doi.org/10.3390/molecules25245853
+  arxiv: null
+  pmid: null
+- title: Theory and algorithms for chiroptical properties and spectroscopies of aqueous systems
+  authors:
+  - Giovannini, Tommaso
+  - Egidi, Franco
+  - Cappelli, Chiara
+  year: 2020
+  venue: Phys. Chem. Chem. Phys.
+  volume: '22'
+  issue: ''
+  pages: 22864–22879
+  doi: https://doi.org/10.1039/D0CP04027D
+  arxiv: null
+  pmid: null
+- title: 'Calculation of linear and non-linear electric response properties of systems in aqueous solution: A polarizable
+    quantum/classical approach with quantum repulsion effects'
+  authors:
+  - Marrazzini, Gioia
+  - Giovannini, Tommaso
+  - Egidi, Franco
+  - Cappelli, Chiara
+  year: 2020
+  venue: Journal of Chemical Theory and Computation
+  volume: '16'
+  issue: '11'
+  pages: '6993–7004. PMID: 33058671'
+  doi: https://doi.org/10.1021/acs.jctc.0c00674
+  arxiv: null
+  pmid: '33058671'
+- title: 'Graphene plasmonics: Fully atomistic approach for realistic structures'
+  authors:
+  - Giovannini, Tommaso
+  - Bonatti, Luca
+  - Polini, Marco
+  - Cappelli, Chiara
+  year: 2020
+  venue: The Journal of Physical Chemistry Letters
+  volume: '11'
+  issue: '18'
+  pages: '7595–7602. PMID: 32805117'
+  doi: https://doi.org/10.1021/acs.jpclett.0c02051
+  arxiv: null
+  pmid: '32805117'
+- title: 'Molecular spectroscopy of aqueous solutions: a theoretical perspective'
+  authors:
+  - Giovannini, Tommaso
+  - Egidi, Franco
+  - Cappelli, Chiara
+  year: 2020
+  venue: Chem. Soc. Rev.
+  volume: '49'
+  issue: ''
+  pages: 5664–5677
+  doi: https://doi.org/10.1039/C9CS00464E
+  arxiv: null
+  pmid: null
+- title: Evolution of bonding during the insertion of anionic ibuprofen into model cell membranes
+  authors:
+  - Rojas-Valencia, Natalia
+  - Gómez, Sara
+  - Montillo, Sebastian
+  - Manrique-Moreno, Marcela
+  - Cappelli, Chiara
+  - Hadad, Cacier
+  - Restrepo, Albeiro
+  year: 2020
+  venue: The Journal of Physical Chemistry B
+  volume: '124'
+  issue: '1'
+  pages: '79–90. PMID: 31790579'
+  doi: https://doi.org/10.1021/acs.jpcb.9b09705
+  arxiv: null
+  pmid: '31790579'

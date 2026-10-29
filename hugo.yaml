@@ -1,0 +1,58 @@
+baseURL: https://hpccenter.sns.it/
+locale: en-US
+title: High Performance Computing Center
+
+module:
+  imports:
+    - path: github.com/imfing/hextra
+
+menus:
+  main:
+    - identifier: about
+      name: About
+      url: /about
+      weight: 10
+    - identifier: news
+      name: News
+      url: /blog
+      weight: 20
+    - identifier: people
+      name: People
+      url: /people
+      weight: 30
+    - identifier: docs
+      name: Documentation
+      url: /docs
+      weight: 100
+    - identifier: research-support
+      name: Research support
+      url: /research-support
+      weight: 50
+    - identifier: forms
+      name: Forms
+      url: /forms
+      weight: 60
+    - identifier: privacy
+      name: Privacy policy
+      url: /privacy
+      weight: 70
+    - identifier: contacts
+      name: Contacts
+      url: /contacts
+      weight: 80
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: /logo.png
+      dark: /logo.png
+      link: /
+      width: 40
+      height: 20

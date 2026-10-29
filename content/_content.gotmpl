@@ -1,0 +1,19 @@
+{{ $md := "{{< cards cols=3 >}}\n" }}
+
+{{ range hugo.Data.people }}
+  {{ $card := printf `{{< card imageStyle="width:110px; height:110px; object-fit:cover; border-radius:50%%; margin:1.5rem auto 0;" title=%q` .name }}
+  {{ with .role }}{{ $card = printf `%s subtitle=%q` $card . }}{{ end }}
+  {{ with .picture }}{{ $card = printf `%s image=%q` $card . }}{{ end }}
+  {{ with .email }}{{ $card = printf `%s link=%q` $card (printf "mailto:%s" .) }}{{ end }}
+  {{ $md = printf "%s  %s >}}\n" $md $card }}
+{{ end }}
+
+{{ $md = printf "%s{{< /cards >}}\n" $md }}
+
+{{ $page := dict
+  "path" "people"
+  "title" "People"
+  "params" (dict "width" "wide" "toc" false)
+  "content" (dict "mediaType" "text/markdown" "value" $md)
+}}
+{{ .AddPage $page }}
