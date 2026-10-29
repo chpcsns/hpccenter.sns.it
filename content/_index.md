@@ -1,39 +1,27 @@
 ---
-title: "Home"
+toc: false
 ---
 
-<h1 id="purposes">Purposes</h1>
-<p>technological and instrumental support to research groups, research centers and laboratories that, in order to carry out their research activities, need to use</p>
-<ul>
-<li>
-<p>scientific calculation on high performance architectures</p>
-</li>
-<li>
-<p>webservices, databases and web pages for the humanities</p>
-</li>
-</ul>
+{{< callout type="warning">}}
+  HPC computing clusters will be unavailable from the afternoon of November the 9th, 2026 to November the 12th, 2026
+{{< /callout >}}
 
-<h1 id="main-activities">Main activities</h1>
-<ul>
-<li>
-<p>24/7 management of the computational clusters hosted in the machine room of the San Silvestro complex</p>
-</li>
-<li>
-<p>design and installation of new computing infrastructures</p>
-</li>
-<li>
-<p>coordination of hosting, installation and maintenance of equipment</p>
-</li>
-<li>
-<p>installation and maintenance of the workload and storage quota management system</p>
-</li>
-<li>
-<p>scientific software installation</p>
-</li>
-<li>
-<p>virtual infrastructure management for the management of virtual machines or containers</p>
-</li>
-<li>
-<p>infrastructure management for websites provisioning for research</p>
-</li>
-</ul>
+{{< hextra/hero-headline >}}
+  High Performance Computing Center
+{{< /hextra/hero-headline >}}
+
+{{< hextra/hero-subtitle >}}
+  Scuola Normale Superiore
+{{< /hextra/hero-subtitle >}}
+
+
+The **High Performance Computing (HPC) Centre** provides technological and instrumental support to research groups and centres and to laboratories that, in the carrying out of their activity, need to utilise scientific calculation, Machine Learning and AI, web and database development.
+
+## Main Activities
+- 24/7 management of the computational clusters hosted in the machine room of the San Silvestro complex
+- design and installation of new computing infrastructures
+- coordination of hosting, installation and maintenance of equipment
+- installation and maintenance of the workload and storage quota management system<
+- scientific software installation
+- virtual infrastructure management for the management of virtual machines or containers
+- infrastructure management for websites provisioning for research
