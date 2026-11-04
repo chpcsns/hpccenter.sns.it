@@ -20,10 +20,6 @@ menus:
       name: People
       url: /people
       weight: 30
-    - identifier: docs
-      name: Documentation
-      url: /docs
-      weight: 100
     - identifier: research-support
       name: Research support
       url: /research-support
@@ -40,6 +36,14 @@ menus:
       name: Contacts
       url: /contacts
       weight: 80
+    - identifier: docs
+      name: Documentation
+      url: /docs
+      weight: 100
+    - identifier: staff
+      name: Staff
+      url: /staff
+      weight: 120
 
 markup:
   goldmark:
