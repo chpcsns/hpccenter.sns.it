@@ -1,5 +1,6 @@
 ---
 title: Group Owned Resources
+weight: 1
 ---
 Trantor acts as front end node for group owned resources open to computation only to specific groups via dedicated queues and permissions. Unless otherwise noted these clusters use the same policies applied to institutional resources.
 

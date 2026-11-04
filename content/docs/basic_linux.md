@@ -1,5 +1,6 @@
 ---
 title: Basic Linux Commands
+weight: 101
 ---
 
 This is just a super quick reference list. You need a minimum of proficiency with **Unix** shells (*bash* and *tcsh* are the ones mostly used on the cluster) and Linux systems.

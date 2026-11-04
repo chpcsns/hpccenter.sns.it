@@ -1,5 +1,6 @@
 ---
 title: Connecting to the Head Nodes
+weight: 100
 ---
 
 To get access to (most) of the cluster resources, you must first login into one of the available *head nodes*:

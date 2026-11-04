@@ -1,5 +1,6 @@
 ---
 title: Trantor
+weight: 300
 ---
 
 ## Hardware

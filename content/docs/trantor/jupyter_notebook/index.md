@@ -1,5 +1,6 @@
 ---
 title: Jupyter Notebook
+weight: 3
 ---
 
 ## Introduction

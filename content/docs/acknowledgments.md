@@ -1,5 +1,6 @@
 ---
 title: Acknowledgments Policy
+weight: 500
 ---
 
 In order to highlight the relevance of HPC and simulation in SNS research, we kindly ask you to add an acknowledgment to your publications whose results was obtained by making use of the computational resources managed by the HPC Center. A sentence like the following one should suffice:
