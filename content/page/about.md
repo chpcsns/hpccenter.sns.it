@@ -10,7 +10,7 @@ December 4, 2019 (D.D. n.643, 644)
 technical support for SNS researchers requiring:
 - scientific calculation on high performance architectures
 - webservices, databases and web pages. <br/>The CHPC offers technical support to the Docstar Laboratory of the Scuola Normale Superiore 
-    with regard to project implementation, web hosting, web development, backups and database project and administration (see [Docstar website](http://www.docstar.sns.it) 
+    with regard to project implementation, web hosting, web development, backups and database project and administration
     for more detailed information - site is in Italian)
 
 # Main activities
