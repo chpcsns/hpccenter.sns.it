@@ -15,13 +15,4 @@ toc: false
 {{< /hextra/hero-subtitle >}}
 
 
-The **High Performance Computing (HPC) Centre** provides technological and instrumental support to research groups and centres and to laboratories that, in the carrying out of their activity, need to utilise scientific calculation, Machine Learning and AI, web and database development.
-
-## Main Activities
-- 24/7 management of the computational clusters hosted in the machine room of the San Silvestro complex
-- design and installation of new computing infrastructures
-- coordination of hosting, installation and maintenance of equipment
-- installation and maintenance of the workload and storage quota management system<
-- scientific software installation
-- virtual infrastructure management for the management of virtual machines or containers
-- infrastructure management for websites provisioning for research
+The **High Performance Computing (HPC) Centre** provides technological and instrumental support to research groups and centres and to laboratories that, in the carrying out of their activity, need to utilise scientific calculation.

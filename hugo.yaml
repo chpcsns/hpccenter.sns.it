@@ -8,30 +8,10 @@ module:
 
 menus:
   main:
-    - identifier: about
-      name: About
-      url: /about
-      weight: 10
-    - identifier: news
-      name: News
-      url: /blog
-      weight: 20
     - identifier: people
       name: People
       url: /people
       weight: 30
-    - identifier: research-support
-      name: Research support
-      url: /research-support
-      weight: 50
-    - identifier: forms
-      name: Forms
-      url: /forms
-      weight: 60
-    - identifier: privacy
-      name: Privacy policy
-      url: /privacy
-      weight: 70
     - identifier: contacts
       name: Contacts
       url: /contacts
