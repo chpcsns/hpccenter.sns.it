@@ -23,10 +23,12 @@ give you a complete overview of how the scheduler works and how to send your job
 Main commands are:
 * `sbatch` To submit a job in a queue for later execution
 * `scancel` To remove a job from the queue
-* `sinfo` To inspect the states of partitions
-* `squeue` To see the state of the queues
+* `sinfo` To inspect the states of partitions (there is a state name and a symbol for the power state of the node, you can find a legend [here](https://slurm.schedmd.com/sinfo.html#SECTION_NODE-STATE-CODES))
+* `squeue` To see the state of the queues (legend of states is available [here](https://slurm.schedmd.com/squeue.html#SECTION_JOB-STATE-CODES))
 
-You can get more detailed informations about how does those commands work by using the `--help` option.
+You can get more detailed informations about how does those commands work by using the `--help` option. 
+Here is a [cheatsheet](https://slurm.schedmd.com/pdfs/summary.pdf) you can keep as quick reference 
+(it also includes the most common SLURM-set variables).
 
 A simple example of how to run a script in the queue system is:
 
