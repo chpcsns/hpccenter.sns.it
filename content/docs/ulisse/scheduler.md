@@ -2,9 +2,6 @@
 title: Submitting Batch Jobs
 weight: 20
 ---
-{{< callout type="warning">}}
-  Interactive Batch Jobs are currently not supported.
-{{< /callout >}}
 
 Ulisse uses SLURM as scheduler. For a detailed reference, please refer to the [official documentation](https://slurm.schedmd.com/documentation.html).
 In this page you can find can just a quick reference to get started.
@@ -56,6 +53,17 @@ Submitted batch job <JOBID>
 The job will write a file on your home and then wait for 2 minutes, so you can check that it is in the queue
 using `squeue`; if there are many jobs from other user you can simply use `squeue -u $USER` to get only your jobs
 or `squeue -j <JOBID>` to get information about the specific job yoyu just submitted.
+
+### Interactive Session
+If you need to interactively on a compute node, you can ask the scheduler an interactive session. This can be easily done using srun:
+```
+$ srun -p <PARTITION> -N 1 -n 1 -c <NUMBER OF CPUS> -t <REQUESTED TIME HH:MM:SS> --pty bash
+```
+the next prompt should be a shell on the node allocated by the scheduler. 
+
+Since the scheduler implement power saving on compute nodes, if the required resource is not already powered-on it
+will wait for the compute node to boot and this can take a moment (up to 10 minutes), so if it hangs, try to check 
+`squeue` from another shell to see if the process is waiting for the booting node.
 
 
 
