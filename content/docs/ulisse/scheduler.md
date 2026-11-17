@@ -56,7 +56,7 @@ or `squeue -j <JOBID>` to get information about the specific job yoyu just submi
 
 ### Interactive Session
 If you need to interactively on a compute node, you can ask the scheduler an interactive session. This can be easily done using srun:
-```
+```bash
 $ srun -p <PARTITION> -N 1 -n 1 -c <NUMBER OF CPUS> -t <REQUESTED TIME HH:MM:SS> --pty bash
 ```
 the next prompt should be a shell on the node allocated by the scheduler. 
@@ -65,6 +65,29 @@ Since the scheduler implement power saving on compute nodes, if the required res
 will wait for the compute node to boot and this can take a moment (up to 10 minutes), so if it hangs, try to check 
 `squeue` from another shell to see if the process is waiting for the booting node.
 
+### Requesting a Whole Node
+It is sometimes useful to request an entire compute node without thinking too much about the amount 
+CPUs it has (eg. for benchmarking). In this case the following shortcut can be used:
+```bash
+$ srun -p <PARTITION> -N 1 --exclusive --mem=<MEMORY OF NODE> ...
+```
+* `--exclusive` is equivalent to requesting all CPUs in the node
+* GPUs should be requested with a separate option.
+
+{{< callout type="warning">}}
+  It is sometimes reported that `--mem=0` is equivalent to requesting all RAM in the compute node.
+  This configuration, however is not supported by Ulisse.
+{{< /callout >}}
+
+### Power Saving
+Since inactive compute nodes still consume a lot of power and generate considerable heat,
+Ulisse implement a modern strategy to cut useless power consumption. All compute nodes are kept
+in a power-off state by the scheduler and turned on upon scheduler request. After the scheduler
+(SLURM) decide to run a job on a compute node, it sends a signal to turn it on, waits for the 
+node to boot (this can require from 5 to 10 minutes) and finally runs the job. After the job 
+completed SLURM wait one hour before turning the node down (if there is a job ready to start a 
+power cycle is avoided). This mechanism drastically reduce the amount of useless energy consumed 
+by the cluster at the cost of short wait at the beginning of some compute jobs.
 
 
 
