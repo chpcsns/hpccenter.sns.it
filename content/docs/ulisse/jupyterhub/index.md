@@ -28,21 +28,25 @@ on how to download and configure the VPN client.
 
 {{% steps %}}
 
-### Browse [Jupyterhub webpage](https://jupyterhub.chpc.sns.it)
+<h3>Browse <a href="https://jupyterhub.chpc.sns.it">Jupyterhub webpage</a></h3>
 
-### Enter your personal account's username and password (the same used to ssh into Ulisse)
+<h3>Enter your personal account's username and password (the same used to ssh into Ulisse)</h3>
+
 ![Screenshot of login page](jh1.png)
 
-### Use "Add New Server" to create a new JupyterHub server instance
+<h3>Use "Add New Server" to create a new JupyterHub server instance</h3>
+
 ![Screenshot of server page](jh2.png)
 
-### Click on "Start" 
+<h3>Click on "Start"</h3>
+
 ![Screenshot of server page with a server](jh3.png)
 
-### Configure the partition, and resources needed and again on "Start" to subimit the job
-![Screenshot of resource request page ](jh4.png)
+<h3>Configure the partition, and resources needed and again on "Start" to submit the job</h3>
 
-### Wait for the job to start 
+![Screenshot of resource request page](jh4.png)
+
+<h3>Wait for the job to start</h3>
 {{< callout >}}
 
 It can take a while, as the job have to be scheduled and the resources have to became available.
@@ -72,7 +76,7 @@ You can create your own Python virtual environment and use it as a kernel in Jup
 
 {{% steps %}}
 
-### Create the environment
+<h3>Create the environment</h3>
 
 Open a terminal in JupyterLab (or log in via SSH) and run:
 
@@ -82,13 +86,13 @@ source ~/envs/myenv/bin/activate
 pip install ipykernel
 ```
 
-### Register it as a kernel
+<h3>Register it as a kernel</h3>
 
 ```bash
 python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
 ```
 
-### Use it
+<h3>Use it</h3>
 
 Refresh JupyterLab. **Python (myenv)** now appears in the kernel picker. Install any further packages with `pip` while the environment is activated.
 
@@ -213,7 +217,7 @@ Before deleting:
 
 {{% steps %}}
 
-### Load the module
+<h3>Load the module</h3>
 
 In a JupyterLab terminal (or over SSH):
 
@@ -222,21 +226,21 @@ module load uv
 uv python list          # shows the available Python versions
 ```
 
-### Create the environment
+<h3>Create the environment</h3>
 
 ```bash
 uv venv ~/envs/myenv --python 3.12
 source ~/envs/myenv/bin/activate
 ```
 
-### Install packages and register the kernel
+<h3>Install packages and register the kernel</h3>
 
 ```bash
 uv pip install ipykernel numpy pandas
 python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
 ```
 
-### Use it
+<h3>Use it</h3>
 
 Refresh JupyterLab and select **Python (myenv)** in the kernel picker.
 
