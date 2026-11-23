@@ -2,10 +2,6 @@
 toc: false
 ---
 
-{{< callout type="warning">}}
-  HPC computing clusters will be unavailable from the afternoon of November the 9th, 2026 to November the 12th, 2026
-{{< /callout >}}
-
 {{< hextra/hero-headline >}}
   High Performance Computing Center
 {{< /hextra/hero-headline >}}
