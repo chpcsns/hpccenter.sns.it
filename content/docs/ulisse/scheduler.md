@@ -76,8 +76,17 @@ $ srun -p <PARTITION> -N 1 --exclusive --mem=<MEMORY OF NODE> ...
 
 {{< callout type="warning">}}
   It is sometimes reported that `--mem=0` is equivalent to requesting all RAM in the compute node.
-  This configuration, however is not supported by Ulisse.
+  This configuration is not supported by Ulisse.
 {{< /callout >}}
+
+### GPU Nodes
+GPUs resources can be accessed via slurm scheduler. The options  used to request GPUs (in `sbatch` or `srun`):
+```
+-G, --gpus=n            count of GPUs required for the job
+--gpus-per-node=n       number of GPUs required per allocated node
+--gpus-per-socket=n     number of GPUs required per allocated socket
+--gpus-per-task=n       number of GPUs required per spawned task
+```
 
 ### Power Saving
 Since inactive compute nodes still consume a lot of power and generate considerable heat,

@@ -43,10 +43,18 @@ on how to download and configure the VPN client.
 ![Screenshot of resource request page ](jh4.png)
 
 ### Wait for the job to start 
-{{< callout type="warning">}}
+{{< callout >}}
 
 It can take a while, as the job have to be scheduled and the resources have to became available.
 Read more about that [here](/docs/ulisse/scheduler/#power-saving).
+
+{{< /callout >}}
+
+{{< callout type="warning">}}
+
+It could happen that the starting up page remain stuck even after the compute node is available.
+If you see from `squeue` that your job is running, but you are still in the loading page, just try
+to reload the page in your browser.
 
 {{< /callout >}}
 
@@ -58,7 +66,9 @@ Read more about that [here](/docs/ulisse/scheduler/#power-saving).
 The basic kernel available on JupyterHub can cover only a limited set of applications. For
 more complex scientific tasks, customized environment are often needed.
 
-Here is explained how to create a Python virtual environment to be used with JupyterHub:
+You can create your own Python virtual environment and use it as a kernel in JupyterHub, without involving the administrators. Two tools are available: the standard `venv` + `pip`, and [`uv`](#using-uv), which is faster and can use the Python versions installed on the cluster.
+
+### Using venv and pip
 
 {{% steps %}}
 
@@ -84,14 +94,6 @@ Refresh JupyterLab. **Python (myenv)** now appears in the kernel picker. Install
 
 {{% /steps %}}
 
-### Checking your kernels
-
-```bash
-jupyter kernelspec list
-```
-
-To remove a kernel, run `jupyter kernelspec uninstall myenv` and delete the environment directory.
-
 ### Saving an environment
 
 To record the packages installed in an environment, activate it and export the list to a `requirements.txt` file:
@@ -116,6 +118,72 @@ python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
 `pip freeze` lists every installed package with its exact version, including `ipykernel`. Rebuild with the same Python version you used originally, since some pinned versions are not available for every Python release.
 {{< /callout >}}
 
+### Installing the environment outside your home
+
+Large environments can be faster on the node's local disk. You can create the environment under `/scratch` and register it the same way:
+
+```bash
+mkdir -p /scratch/$USER/envs
+python3 -m venv /scratch/$USER/envs/myenv
+source /scratch/$USER/envs/myenv/bin/activate
+pip install ipykernel
+python -m ipykernel install --user --name myenv --display-name "Python (myenv_scratch)"
+```
+
+{{< callout type="warning" >}}
+`/scratch` is **local to each compute node**. The kernel only works when your Jupyter session runs on the node where you created the environment, and on any other node it will fail to start. Scratch should also be cleaned after the end of the job, so keep a `requirements.txt` (`pip freeze > requirements.txt`) to rebuild it.
+{{< /callout >}}
+
+{{< callout type="info" >}}
+If you need the environment on every node, keep it in your home or on the shared project storage instead.
+{{< /callout >}}
+
+## Managing your kernels
+
+Kernels and environments are independent: deleting an environment does not remove its kernel, and removing a kernel does not delete the environment.
+
+### Listing kernels
+
+Run those commands from the node shell inside jupyterhub. Those commands won't work from Ulisse's headnode.
+
+```bash
+jupyter kernelspec list            # kernel name and location
+jupyter kernelspec list --json     # full details, useful for scripts
+```
+
+Your own kernels are stored in `~/.local/share/jupyter/kernels/`. If a kernel of yours has the same name as a system one (for example `python3`), yours takes precedence.
+
+### Inspecting and editing a kernel
+{{< callout type="warning" >}}
+This is an advanced procedure, do it only if you are confident with what you are doing.
+{{< /callout >}}
+
+Each kernel is a directory containing a `kernel.json` file:
+
+```bash
+cat ~/.local/share/jupyter/kernels/myenv/kernel.json
+```
+
+```json
+{
+  "argv": ["/home/user/envs/myenv/bin/python", "-m", "ipykernel_launcher", "-f", "{connection_file}"],
+  "display_name": "Python (myenv)",
+  "language": "python",
+  "env": {"OMP_NUM_THREADS": "4"}
+}
+```
+
+You can edit it directly with any text editor:
+
+- `display_name`: the name shown in the kernel picker (the directory name stays the same).
+- `env`: environment variables set when the kernel starts. They can also be set at install time with `--env OMP_NUM_THREADS 4`.
+- the first entry of `argv`: the Python interpreter used by the kernel. Change it if you move an environment.
+
+Changes apply the next time the kernel starts, so restart any notebook that is already using it.
+
+To update a kernel, you can also run `ipykernel install` again with the same `--name`: it overwrites the existing one.
+
+
 ### Removing an environment
 
 Removing an environment takes two steps: unregister the kernel, then delete the environment directory.
@@ -132,24 +200,100 @@ Before deleting:
 
 - Run `deactivate` if the environment is active in your terminal.
 - Shut down any notebooks using it (in JupyterLab: *Kernel → Shut Down All Kernels*), otherwise they are left with a dead kernel.
-- Save the package list as described above if you may want to rebuild it later.
+- Save the package list as described [above](#saving-an-environment) if you may want to rebuild it later.
 
-### Installing the environment outside your home
+## Using uv
 
-Large environments (many small files, such as ML stacks) can be faster on the node's local disk. Create the environment under `/scratch` and register it the same way:
+[`uv`](https://docs.astral.sh/uv/) is a fast replacement for `pip` and `venv`. It is available as a module and works with the same kernels and the same commands for managing them described above. Compared to `venv` + `pip` it:
+
+- installs packages much faster, especially large ones like PyTorch or scientific stacks;
+- lets you choose the Python version of each environment from the versions installed on the cluster, independently of the system Python.
+
+### Creating an environment and a kernel
+
+{{% steps %}}
+
+### Load the module
+
+In a JupyterLab terminal (or over SSH):
 
 ```bash
-mkdir -p /scratch/$USER/envs
-python3 -m venv /scratch/$USER/envs/myenv
-/scratch/$USER/envs/myenv/bin/pip install ipykernel
-/scratch/$USER/envs/myenv/bin/python -m ipykernel install --user \
-    --name myenv --display-name "Python (myenv)"
+module load uv
+uv python list          # shows the available Python versions
 ```
 
-{{< callout type="warning" >}}
-`/scratch` is **local to each compute node**. The kernel only works when your Jupyter session runs on the node where you created the environment, and on any other node it will fail to start. Scratch may also be cleaned after a reboot or reimage, so keep a `requirements.txt` (`pip freeze > requirements.txt`) to rebuild it.
-{{< /callout >}}
+### Create the environment
+
+```bash
+uv venv ~/envs/myenv --python 3.12
+source ~/envs/myenv/bin/activate
+```
+
+### Install packages and register the kernel
+
+```bash
+uv pip install ipykernel numpy pandas
+python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
+```
+
+### Use it
+
+Refresh JupyterLab and select **Python (myenv)** in the kernel picker.
+
+{{% /steps %}}
 
 {{< callout type="info" >}}
-If you need the environment on every node, keep it in your home or on the shared project storage instead.
+Use `uv pip install` instead of `pip install`: environments created by `uv` do not contain `pip` by default. If you want a regular `pip` inside the environment, create it with `uv venv --seed`.
+
+The `uv` module is only needed in the terminal, when you create or modify an environment. Running the kernel afterwards does not require it.
 {{< /callout >}}
+
+### Saving and rebuilding an environment
+
+```bash
+# save the installed packages
+source ~/envs/myenv/bin/activate
+uv pip freeze > ~/envs/myenv-requirements.txt
+
+# rebuild it later, or on another node
+module load uv
+uv venv ~/envs/myenv --python 3.12
+source ~/envs/myenv/bin/activate
+uv pip install -r ~/envs/myenv-requirements.txt
+python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
+```
+
+Use the same Python version as the original environment when rebuilding.
+
+`uv` also supports complex projects management (eg. dependencies, python versions, etc.) 
+via a `pyproject.toml` file. For this, please refer to the official [uv documentaion](https://docs.astral.sh/uv/pip/). 
+
+### Environments on /scratch
+
+The Python interpreters provided by the module are on shared storage, so they are visible from every node. Only the environment itself is node-local when you put it under `/scratch`. Installing the environment on the local folder can give a substantial gain in performance at load time.
+
+To do this, from the compute node shell that you can find in jupyterhub:
+
+```bash
+module load uv
+mkdir -p /scratch/$USER/envs
+uv venv /scratch/$USER/envs/myenv --python 3.12
+cd /scratch/$USER/envs/myenv
+uv pip install -r requirements.txt
+uv run python -m ipykernel install --user --name myenv --display-name "Python (myenv_scratch)"
+```
+
+The same restrictions described [above](#installing-the-environment-outside-your-home) apply: the kernel only works on the node where the environment was created, and scratch can be cleaned.
+
+{{< callout type="info" >}}
+The `uv` package cache is also stored on the node's local `/scratch` (in `/scratch/$USER/.cache/uv`). To free space, run `uv cache clean`.
+{{< /callout >}}
+
+### Removing an environment
+
+Same as for `venv`:
+
+```bash
+jupyter kernelspec uninstall myenv
+rm -rf ~/envs/myenv
+```
